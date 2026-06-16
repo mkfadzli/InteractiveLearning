@@ -11,6 +11,30 @@ Turn any PDF into an interactive course on your machine. Uploads and progress st
 
 ---
 
+## Quick start (Windows)
+
+Double-click **`run.bat`** in the project folder, or run it from PowerShell:
+
+```powershell
+.\run.bat
+```
+
+The script will:
+1. Check that Node.js is installed
+2. Run `npm install` automatically on first launch (if `node_modules` is missing)
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
+4. Start the Next.js dev server
+
+Before the first run, copy `.env.example` to `.env.local` and set `ANTHROPIC_API_KEY` if you want AI lesson enrichment (optional for structure preview).
+
+You also need Python with PyMuPDF for PDF uploads:
+
+```powershell
+pip install pymupdf
+```
+
+---
+
 ## Setup
 
 ```bash
@@ -25,6 +49,7 @@ copy .env.example .env.local   # Windows
 
 # 3. Run
 npm run dev                    # → http://localhost:3000
+# Or on Windows: double-click run.bat
 ```
 
 ### Environment variables
@@ -116,6 +141,7 @@ scripts/
   pdf2course.py           — stage 1: PDF → structured course.json
   lessonwriter.py         — stage 2: course.json → enriched stories + quizzes
   pipeline.py             — runner that orchestrates both, emits SSE events
+run.bat                   — Windows launcher (install deps + start dev server)
 sample-course-*.json      — example course output for local testing
 ```
 

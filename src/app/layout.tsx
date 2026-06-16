@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "InteractiveLearning — Hetnet Wireless Technologies",
@@ -46,7 +47,10 @@ export default function RootLayout({
         />
         <link rel="stylesheet" href={FONTS_URL} />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
