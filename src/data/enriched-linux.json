@@ -1,0 +1,157 @@
+{
+  "source": {
+    "file": "Linux_Basics_for_Hackers.pdf",
+    "title": "Linux Basics for Hackers — Chapter 2: Text Manipulation",
+    "pages": 250,
+    "structure_from": "embedded_toc",
+    "_notes": "Demo content: a small, faithfully-paraphrased excerpt of one chapter, for prototype validation only. The full book by OccupyTheWeb is published by No Starch Press and is copyrighted — production use of this material requires publisher licensing. See README."
+  },
+  "summary": { "modules": 1, "lessons": 2, "words": 760, "est_hours": 0.2 },
+  "confidence": {
+    "score": 0.9,
+    "flags": [
+      "code blocks were detected in raw extraction and treated as code (not paraphrased)"
+    ]
+  },
+  "modules": [
+    {
+      "title": "Text Manipulation",
+      "order": 1,
+      "lessons": [
+        {
+          "title": "Filtering Text with grep",
+          "order": 1,
+          "page_start": 60,
+          "page_end": 62,
+          "est_minutes": 4,
+          "story": {
+            "title": "Finding the needle: filtering streams with grep",
+            "est_minutes": 4,
+            "pages": [
+              {
+                "blocks": [
+                  { "type": "heading", "text": "When a terminal gives you too much" },
+                  { "type": "paragraph", "text": "Linux command-line tools are generous: they hand you the whole file, the whole log, the whole configuration. Most of the time you only care about the few lines that match a keyword. That is the job of grep — described in the source as probably the most widely used text manipulation command in Linux." },
+                  { "type": "paragraph", "text": "grep lets you filter the content of a file for display. Give it a keyword and a source of text, and it returns only the lines that contain that keyword. Everything else is hidden." },
+                  { "type": "key_idea", "text": "grep reads a stream of text and prints only the lines that match the keyword you give it." }
+                ]
+              },
+              {
+                "blocks": [
+                  { "type": "heading", "text": "Pipes: how two commands cooperate" },
+                  { "type": "paragraph", "text": "The classic way to use grep is to combine it with another command using a pipe — the vertical bar character |. The pipe takes whatever the command on the left prints and feeds it as input to the command on the right." },
+                  { "type": "paragraph", "text": "In the source's example, the goal is to see every line in the Snort configuration file that mentions the word output. cat reads the whole file; the pipe sends that output to grep, which keeps only the matching lines:" },
+                  { "type": "code", "text": "kali> cat /etc/snort/snort.conf | grep output", "caption": "Listing 2-5: Display only lines containing the keyword “output”" },
+                  { "type": "paragraph", "text": "The result is a much shorter view: instead of hundreds of lines of configuration, you see just the lines that match. The same idiom — something | grep keyword — works on log files, command output, anything that produces text." },
+                  { "type": "callout", "title": "Why pipes are a superpower", "text": "Because every Unix command reads input and prints output, pipes let you chain commands together into custom workflows without writing a program. grep, sort, head, tail, wc — they all compose this way." }
+                ]
+              },
+              {
+                "blocks": [
+                  { "type": "heading", "text": "Combining grep, nl, head, and tail" },
+                  { "type": "paragraph", "text": "Once you can chain commands, you can answer surprisingly specific questions. The source poses a small challenge: display the five lines immediately before the line that contains # Step #6: Configure output plugins." },
+                  { "type": "paragraph", "text": "The trick has two stages. First, use nl (number lines) piped into grep to find the line number of the marker — the source shows it lives at line 512. Then use tail to start reading from line 507 and pipe that into head to keep just the first six lines:" },
+                  { "type": "code", "text": "kali> tail -n+507 /etc/snort/snort.conf | head -n 6", "caption": "Return the marker line plus the five lines before it" },
+                  { "type": "key_idea", "text": "Small composable tools beat one big tool: nl finds positions, tail seeks from a line, head limits the count, grep filters by content." }
+                ]
+              }
+            ],
+            "quiz": {
+              "questions": [
+                {
+                  "prompt": "What does the grep command do?",
+                  "options": [
+                    "It edits a file in place by replacing matching text",
+                    "It filters a stream of text and prints only the lines that match a keyword",
+                    "It compresses files to save disk space",
+                    "It runs a Linux service in the background"
+                  ],
+                  "correctIndex": 1,
+                  "explanation": "grep takes text input and returns only the lines containing the keyword you specify; everything else is dropped from the display."
+                },
+                {
+                  "prompt": "What is the role of the pipe character | in the command cat file.conf | grep output?",
+                  "options": [
+                    "It runs both commands at the same time on different files",
+                    "It separates two unrelated commands so they each show their own output",
+                    "It sends the output of the command on the left into the command on the right as input",
+                    "It tells grep to ignore the file and print everything"
+                  ],
+                  "correctIndex": 2,
+                  "explanation": "The pipe connects commands: cat prints the file's contents, and the pipe feeds those contents to grep as its input."
+                },
+                {
+                  "prompt": "In the chapter's challenge, why combine tail and head instead of using a single command?",
+                  "options": [
+                    "Because grep cannot match line numbers",
+                    "Because tail starts reading from a given line, and head limits how many lines to keep — together they slice a window out of the file",
+                    "Because Linux requires every pipeline to contain at least two commands",
+                    "Because head reverses the order of the lines"
+                  ],
+                  "correctIndex": 1,
+                  "explanation": "tail -n+507 starts reading from line 507; piping into head -n 6 keeps just the first six of those lines, giving you the marker plus the five lines preceding it. Each tool does one thing; the pipeline does the composite job."
+                }
+              ]
+            }
+          },
+          "story_figures": []
+        },
+        {
+          "title": "Using sed to Find and Replace",
+          "order": 2,
+          "page_start": 62,
+          "page_end": 64,
+          "est_minutes": 3,
+          "story": {
+            "title": "Search-and-replace from the command line: meet sed",
+            "est_minutes": 3,
+            "pages": [
+              {
+                "blocks": [
+                  { "type": "heading", "text": "When a GUI editor is the wrong tool" },
+                  { "type": "paragraph", "text": "Opening a text editor to change one word in a configuration file is fine when you have one file. It is misery when you have fifty. The Linux command sed exists for exactly this: search for a word or text pattern, then perform an action on every match — all without opening the file in an editor." },
+                  { "type": "paragraph", "text": "The source describes sed as a tool that lets you look for occurrences of a word or pattern and then act on them. Its name is short for stream editor, which captures the idea: sed edits a stream of text as it flows past, line by line." },
+                  { "type": "key_idea", "text": "sed is non-interactive search-and-replace for files and streams — write the rule once, apply it everywhere." }
+                ]
+              },
+              {
+                "blocks": [
+                  { "type": "heading", "text": "Why this matters for everyday Linux work" },
+                  { "type": "paragraph", "text": "Pair sed with grep and the pipe character you just learned and you can do remarkably powerful things: filter a long file down to the lines you care about, then rewrite those lines in place. This is the foundation that scripting and automation are built on later in the book." },
+                  { "type": "callout", "title": "A pattern you will see again", "text": "Every command in this chapter — grep, nl, head, tail, sed — does one job. The power comes from combining them with pipes. Memorize the pieces; combinations follow." }
+                ]
+              }
+            ],
+            "quiz": {
+              "questions": [
+                {
+                  "prompt": "What is sed designed for?",
+                  "options": [
+                    "Opening files in a graphical editor",
+                    "Searching for occurrences of a word or pattern and performing an action on them",
+                    "Compressing log files",
+                    "Encrypting text files at rest"
+                  ],
+                  "correctIndex": 1,
+                  "explanation": "The source defines sed as a command that searches for a word or text pattern and then performs an action on it — most commonly, replacing it."
+                },
+                {
+                  "prompt": "Why does the chapter present commands like grep, head, tail, and sed together?",
+                  "options": [
+                    "They are all variants of the same command",
+                    "Each does one specific job, and they compose with pipes to handle larger tasks",
+                    "Only one of them actually works on Kali Linux",
+                    "They all require a graphical interface to run"
+                  ],
+                  "correctIndex": 1,
+                  "explanation": "The unifying lesson of the chapter is that small single-purpose tools combine through pipes — that is the basis of Linux's command-line philosophy."
+                }
+              ]
+            }
+          },
+          "story_figures": []
+        }
+      ]
+    }
+  ]
+}

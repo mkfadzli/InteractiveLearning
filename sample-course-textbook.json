@@ -1,0 +1,3703 @@
+{
+ "source": {
+  "file": "pdfs/mml-book.pdf",
+  "pages": 417,
+  "title": "Mathematics for Machine Learning",
+  "text_coverage": 1.0,
+  "likely_scanned": false,
+  "structure_from": "embedded_toc",
+  "level_shift": "thin top level (Part I/II) demoted",
+  "exercise_modules_merged": 6
+ },
+ "summary": {
+  "modules": 12,
+  "lessons": 133,
+  "figures": 88,
+  "words": 167432,
+  "est_hours": 14.0
+ },
+ "confidence": {
+  "score": 0.9,
+  "flags": []
+ },
+ "modules": [
+  {
+   "title": "1 Introduction and Motivation",
+   "order": 1,
+   "page_start": 17,
+   "page_end": 22,
+   "lessons": [
+    {
+     "title": "1.1 Finding Words for Intuitions",
+     "order": 1,
+     "page_start": 18,
+     "page_end": 19,
+     "word_count": 963,
+     "est_minutes": 5,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "1.1 Finding Words for Intuitions"
+      },
+      {
+       "type": "paragraph",
+       "text": "12 Introduction and Motivation"
+      },
+      {
+       "type": "paragraph",
+       "text": "1.1 Finding Words for Intuitions"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "1.2 Two Ways to Read This Book",
+     "order": 2,
+     "page_start": 19,
+     "page_end": 22,
+     "word_count": 1442,
+     "est_minutes": 7,
+     "n_figures": 8,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "1.2 Two Ways to Read This Book"
+      },
+      {
+       "type": "paragraph",
+       "text": "1.2 Two Ways to Read This Book 13"
+      },
+      {
+       "type": "paragraph",
+       "text": "desired performance measure. However, in practice, we are interested in the model to perform well on unseen data. Performing well on data that we have already seen (training data) may only mean that we found a good way to memorize the data. However, this may not generalize well to unseen data, and, in practical applications, we often need to expose our machine learning system to situations that it has not encountered before. Let us summarize the main concepts of machine learning that we cover in this book:"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "1.3 Exercises and Feedback",
+     "order": 3,
+     "page_start": 22,
+     "page_end": 22,
+     "word_count": 145,
+     "est_minutes": 1,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "1.3 Exercises and Feedback"
+      },
+      {
+       "type": "paragraph",
+       "text": "16 Introduction and Motivation"
+      },
+      {
+       "type": "paragraph",
+       "text": "pillar: classification. We will discuss classification in the context of support classification vector machines. Similar to regression (Chapter 9), we have inputs x and corresponding labels y. However, unlike regression, where the labels were real-valued, the labels in classification are integers, which requires special care."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "2 Linear Algebra",
+   "order": 2,
+   "page_start": 23,
+   "page_end": 75,
+   "lessons": [
+    {
+     "title": "2.1 Systems of Linear Equations",
+     "order": 1,
+     "page_start": 25,
+     "page_end": 28,
+     "word_count": 1366,
+     "est_minutes": 7,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "2.1 Systems of Linear Equations"
+      },
+      {
+       "type": "paragraph",
+       "text": "2.1 Systems of Linear Equations 19"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 2.2 A mind map of the concepts introduced in this chapter, along with where they are used in other parts of the book."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "2.2 Matrices \u2014 part 1",
+     "order": 2,
+     "page_start": 28,
+     "page_end": 33,
+     "word_count": 1830,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "2.2 Matrices \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "a11 \u00b7 \u00b7 \u00b7 a1n ... ... am1 \u00b7 \u00b7 \u00b7 amn"
+      },
+      {
+       "type": "paragraph",
+       "text": "In the following, we will have a close look at these matrices and de- fine computation rules. We will return to solving linear equations in Sec- tion 2.3."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "2.2 Matrices \u2014 part 2",
+     "order": 3,
+     "page_start": 28,
+     "page_end": 33,
+     "word_count": 276,
+     "est_minutes": 1,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "2.2 Matrices \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "2.3.1 Particular and General Solution"
+      },
+      {
+       "type": "paragraph",
+       "text": "Before discussing how to generally solve systems of linear equations, let us have a look at an example. Consider the system of equations"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "2.3 Solving Systems of Linear Equations \u2014 part 1",
+     "order": 4,
+     "page_start": 33,
+     "page_end": 41,
+     "word_count": 1805,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "2.3 Solving Systems of Linear Equations \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "2.3 Solving Systems of Linear Equations 27"
+      },
+      {
+       "type": "paragraph",
+       "text": "2.3 Solving Systems of Linear Equations"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "2.3 Solving Systems of Linear Equations \u2014 part 2",
+     "order": 5,
+     "page_start": 33,
+     "page_end": 41,
+     "word_count": 1704,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "2.3 Solving Systems of Linear Equations \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "\uf8f0 1 3 0 0 3 0 0 1 0 9 0 0 0 1 \u22124"
+      },
+      {
+       "type": "paragraph",
+       "text": "The key idea for finding the solutions of Ax = 0 is to look at the non- pivot columns, which we will need to express as a (linear) combination of the pivot columns. The reduced row echelon form makes this relatively straightforward, and we express the non-pivot columns in terms of sums and multiples of the pivot columns that are on their left: The second col- umn is 3 times the first column (we can ignore the pivot columns on the right of the second column). Therefore, to obtain 0, we need to subtract"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "2.4 Vector Spaces \u2014 part 1",
+     "order": 6,
+     "page_start": 41,
+     "page_end": 46,
+     "word_count": 1808,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "2.4 Vector Spaces \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "2.4 Vector Spaces 35"
+      },
+      {
+       "type": "paragraph",
+       "text": "and use the Moore-Penrose pseudo-inverse (A\u22a4A)\u22121A\u22a4to determine the Moore-Penrose pseudo-inverse solution (2.59) that solves Ax = b, which also corresponds to the mini- mum norm least-squares solution. A disadvantage of this approach is that it requires many computations for the matrix-matrix product and comput- ing the inverse of A\u22a4A. Moreover, for reasons of numerical precision it is generally not recommended to compute the inverse or pseudo-inverse. In the following, we therefore briefly discuss alternative approaches to solving systems of linear equations. Gaussian elimination plays an important role when computing deter- minants (Section 4.1), checking whether a set of vectors is linearly inde- pendent (Section 2.5), computing the inverse of a matrix (Section 2.2.2), computing the rank of a matrix (Section 2.6.2), and determining a basis of a vector space (Section 2.6.1). Gaussian elimination is an intuitive and constructive way to solve a system of linear equations with thousands of variables. However, for systems with millions of variables, it is impracti- cal as the required number of arithmetic operations scales cubically in the number of simultaneous equations. In practice, systems of many linear equations are solved indirectly, by ei- ther stationary iterative methods, such as the Richardson method, the Ja- cobi method, the Gau\u00df-Seidel method, and the successive over-relaxation method, or Krylov subspace methods, such as conjugate gradients, gener- alized minimal residual, or biconjugate gradients. We refer to the books by Stoer and Burlirsch (2002), Strang (2003), and Liesen and Mehrmann (2015) for further details. Let x\u2217be a solution of Ax = b. The key idea of these iterative methods is to set up an iteration of the form"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "2.4 Vector Spaces \u2014 part 2",
+     "order": 7,
+     "page_start": 41,
+     "page_end": 46,
+     "word_count": 740,
+     "est_minutes": 4,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "2.4 Vector Spaces \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "If U \u2286V and V is a vector space, then U naturally inherits many prop- erties directly from V because they hold for all x \u2208V, and in particular for all x \u2208U \u2286V. This includes the Abelian group properties, the distribu- tivity, the associativity and the neutral element. To determine whether (U, +, \u00b7) is a subspace of V we still do need to show"
+      },
+      {
+       "type": "paragraph",
+       "text": "1. U \u0338= \u2205, in particular: 0 \u2208U 2. Closure of U:"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "2.5 Linear Independence",
+     "order": 8,
+     "page_start": 46,
+     "page_end": 50,
+     "word_count": 1783,
+     "est_minutes": 9,
+     "n_figures": 1,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "2.5 Linear Independence"
+      },
+      {
+       "type": "paragraph",
+       "text": "Remark. Every subspace U \u2286(Rn, +, \u00b7) is the solution space of a homo- geneous system of linear equations Ax = 0 for x \u2208Rn. \u2662"
+      },
+      {
+       "type": "paragraph",
+       "text": "In the following, we will have a close look at what we can do with vectors (elements of the vector space). In particular, we can add vectors together and multiply them with scalars. The closure property guarantees that we end up with another vector in the same vector space. It is possible to find a set of vectors with which we can represent every vector in the vector space by adding them together and scaling them. This set of vectors is a basis, and we will discuss them in Section 2.6.1. Before we get there, we will need to introduce the concepts of linear combinations and linear independence."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "2.6 Basis and Rank",
+     "order": 9,
+     "page_start": 50,
+     "page_end": 54,
+     "word_count": 1766,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "2.6 Basis and Rank"
+      },
+      {
+       "type": "paragraph",
+       "text": "are linearly independent. The reduced row-echelon form of the corre- sponding linear equation system with coefficient matrix"
+      },
+      {
+       "type": "paragraph",
+       "text": "1 \u22124 2 17 \u22122 \u22122 3 \u221210 1 0 \u22121 11 \u22121 4 \u22123 1"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "2.7 Linear Mappings \u2014 part 1",
+     "order": 10,
+     "page_start": 54,
+     "page_end": 67,
+     "word_count": 1801,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "2.7 Linear Mappings \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "\uf8f0 1 2 1 \u22122 \u22123 1 3 5 0"
+      },
+      {
+       "type": "paragraph",
+       "text": "We use Gaussian elimination to determine the rank: \uf8ee"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "2.7 Linear Mappings \u2014 part 2",
+     "order": 11,
+     "page_start": 54,
+     "page_end": 67,
+     "word_count": 1801,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "2.7 Linear Mappings \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "A1 = \u0014cos( \u03c0"
+      },
+      {
+       "type": "paragraph",
+       "text": "4 ) \u2212sin( \u03c0"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "2.7 Linear Mappings \u2014 part 3",
+     "order": 12,
+     "page_start": 54,
+     "page_end": 67,
+     "word_count": 1547,
+     "est_minutes": 8,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "2.7 Linear Mappings \u2014 part 3"
+      },
+      {
+       "type": "paragraph",
+       "text": "\uf8fb) , C = ("
+      },
+      {
+       "type": "paragraph",
+       "text": "1 0 0 0"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "2.8 Affine Spaces",
+     "order": 13,
+     "page_start": 67,
+     "page_end": 69,
+     "word_count": 1126,
+     "est_minutes": 6,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "2.8 Affine Spaces"
+      },
+      {
+       "type": "paragraph",
+       "text": "2.8 Affine Spaces 61"
+      },
+      {
+       "type": "paragraph",
+       "text": "In the following, we will take a closer look at spaces that are offset from the origin, i.e., spaces that are no longer vector subspaces. Moreover, we will briefly discuss properties of mappings between these affine spaces, which resemble linear mappings."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "2.9 Further Reading",
+     "order": 14,
+     "page_start": 69,
+     "page_end": 69,
+     "word_count": 315,
+     "est_minutes": 2,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "2.9 Further Reading"
+      },
+      {
+       "type": "paragraph",
+       "text": "2.9 Further Reading 63"
+      },
+      {
+       "type": "paragraph",
+       "text": "mapping \u03a6 : V \u2192W, and a \u2208W, the mapping"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "Exercises \u2014 2 Linear Algebra",
+     "order": 15,
+     "page_start": 70,
+     "page_end": 75,
+     "word_count": 1710,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "Exercises \u2014 2 Linear Algebra"
+      },
+      {
+       "type": "paragraph",
+       "text": "2.1 We consider (R\\{\u22121}, \u22c6), where"
+      },
+      {
+       "type": "paragraph",
+       "text": "a \u22c6b := ab + a + b, a, b \u2208R\\{\u22121} (2.134)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "3 Analytic Geometry",
+   "order": 3,
+   "page_start": 76,
+   "page_end": 103,
+   "lessons": [
+    {
+     "title": "3.1 Norms",
+     "order": 1,
+     "page_start": 77,
+     "page_end": 78,
+     "word_count": 630,
+     "est_minutes": 3,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "3.1 Norms"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 3.3 For different norms, the red lines indicate the set of vectors with norm 1. Left: Manhattan norm; Right: Euclidean distance."
+      },
+      {
+       "type": "paragraph",
+       "text": "\u2225x\u22251 = 1 \u2225x\u22252 = 1"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "3.2 Inner Products",
+     "order": 2,
+     "page_start": 78,
+     "page_end": 81,
+     "word_count": 1476,
+     "est_minutes": 7,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "3.2 Inner Products"
+      },
+      {
+       "type": "paragraph",
+       "text": "Example 3.2 (Euclidean Norm) The Euclidean norm of x \u2208Rn is defined as Euclidean norm"
+      },
+      {
+       "type": "paragraph",
+       "text": "v u u t"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "3.3 Lengths and Distances",
+     "order": 3,
+     "page_start": 81,
+     "page_end": 82,
+     "word_count": 772,
+     "est_minutes": 4,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "3.3 Lengths and Distances"
+      },
+      {
+       "type": "paragraph",
+       "text": "3.3 Lengths and Distances 75"
+      },
+      {
+       "type": "paragraph",
+       "text": "3.3 Lengths and Distances"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "3.4 Angles and Orthogonality",
+     "order": 4,
+     "page_start": 82,
+     "page_end": 84,
+     "word_count": 1081,
+     "est_minutes": 5,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "3.4 Angles and Orthogonality"
+      },
+      {
+       "type": "paragraph",
+       "text": "d : V \u00d7 V \u2192R (3.22) (x, y) 7\u2192d(x, y) (3.23)"
+      },
+      {
+       "type": "paragraph",
+       "text": "is called a metric. metric"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "3.5 Orthonormal Basis",
+     "order": 5,
+     "page_start": 84,
+     "page_end": 85,
+     "word_count": 758,
+     "est_minutes": 4,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "3.5 Orthonormal Basis"
+      },
+      {
+       "type": "paragraph",
+       "text": "we get that the angle \u03c9 between x and y is given by"
+      },
+      {
+       "type": "paragraph",
+       "text": "cos \u03c9 = \u27e8x, y\u27e9"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "3.6 Orthogonal Complement",
+     "order": 6,
+     "page_start": 85,
+     "page_end": 86,
+     "word_count": 691,
+     "est_minutes": 3,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "3.6 Orthogonal Complement"
+      },
+      {
+       "type": "paragraph",
+       "text": "3.6 Orthogonal Complement 79"
+      },
+      {
+       "type": "paragraph",
+       "text": "Let us introduce this more formally."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "3.7 Inner Product of Functions",
+     "order": 7,
+     "page_start": 86,
+     "page_end": 87,
+     "word_count": 772,
+     "est_minutes": 4,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "3.7 Inner Product of Functions"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 3.7 A plane U in a three-dimensional vector space can be described by its normal vector, which spans its orthogonal complement U\u22a5."
+      },
+      {
+       "type": "paragraph",
+       "text": "j=1 \u03c8jb\u22a5 j , \u03bbm, \u03c8j \u2208R , (3.36)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "3.8 Orthogonal Projections \u2014 part 1",
+     "order": 8,
+     "page_start": 87,
+     "page_end": 97,
+     "word_count": 1813,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "3.8 Orthogonal Projections \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "3.8 Orthogonal Projections 81"
+      },
+      {
+       "type": "paragraph",
+       "text": "for lower and upper limits a, b < \u221e, respectively. As with our usual inner product, we can define norms and orthogonality by looking at the inner product. If (3.37) evaluates to 0, the functions u and v are orthogonal. To make the preceding inner product mathematically precise, we need to take care of measures and the definition of integrals, leading to the definition of a Hilbert space. Furthermore, unlike inner products on finite-dimensional vectors, inner products on functions may diverge (have infinite value). All this requires diving into some more intricate details of real and functional analysis, which we do not cover in this book."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "3.8 Orthogonal Projections \u2014 part 2",
+     "order": 9,
+     "page_start": 87,
+     "page_end": 97,
+     "word_count": 1818,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "3.8 Orthogonal Projections \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "\u00a92024 M. P. Deisenroth, A. A. Faisal, C. S. Ong. Published by Cambridge University Press (2020)."
+      },
+      {
+       "type": "paragraph",
+       "text": "as linear combinations of the basis vectors b1, . . . , bm of U, such that \u03c0U(x) = Pm i=1 \u03bbibi. The basis vectors form the columns of B \u2208Rn\u00d7m, where B = [b1, . . . , bm]."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "3.8 Orthogonal Projections \u2014 part 3",
+     "order": 10,
+     "page_start": 87,
+     "page_end": 97,
+     "word_count": 263,
+     "est_minutes": 1,
+     "n_figures": 1,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "3.8 Orthogonal Projections \u2014 part 3"
+      },
+      {
+       "type": "paragraph",
+       "text": "d(x, L) = \u2225x \u2212\u03c0L(x)\u2225= \u2225x \u2212(x0 + \u03c0U(x \u2212x0))\u2225 (3.73a) = d(x \u2212x0, \u03c0U(x \u2212x0)) = d(x \u2212x0, U) . (3.73b)"
+      },
+      {
+       "type": "paragraph",
+       "text": "We will use projections onto an affine subspace to derive the concept of a separating hyperplane in Section 12.1."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "3.9 Rotations",
+     "order": 11,
+     "page_start": 97,
+     "page_end": 100,
+     "word_count": 1121,
+     "est_minutes": 6,
+     "n_figures": 1,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "3.9 Rotations"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 3.14 A rotation rotates objects in a plane about the origin. If the rotation angle is positive, we rotate counterclockwise."
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 3.15 The robotic arm needs to rotate its joints in order to pick up objects or to place them correctly. Figure taken from (Deisenroth et al., 2015)."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "3.10 Further Reading",
+     "order": 12,
+     "page_start": 100,
+     "page_end": 101,
+     "word_count": 604,
+     "est_minutes": 3,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "3.10 Further Reading"
+      },
+      {
+       "type": "paragraph",
+       "text": "Ii\u22121 0 \u00b7 \u00b7 \u00b7 \u00b7 \u00b7 \u00b7 0 0 cos \u03b8 0 \u2212sin \u03b8 0 0 0 Ij\u2212i\u22121 0 0 0 sin \u03b8 0 cos \u03b8 0 0 \u00b7 \u00b7 \u00b7 \u00b7 \u00b7 \u00b7 0 In\u2212j"
+      },
+      {
+       "type": "paragraph",
+       "text": "\uf8fa\uf8fa\uf8fa\uf8fa\uf8fb \u2208Rn\u00d7n , (3.80)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "Exercises \u2014 3 Analytic Geometry",
+     "order": 13,
+     "page_start": 102,
+     "page_end": 103,
+     "word_count": 468,
+     "est_minutes": 2,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "Exercises \u2014 3 Analytic Geometry"
+      },
+      {
+       "type": "paragraph",
+       "text": "3.1 Show that \u27e8\u00b7, \u00b7\u27e9defined for all x = [x1, x2]\u22a4\u2208R2 and y = [y1, y2]\u22a4\u2208R2 by"
+      },
+      {
+       "type": "paragraph",
+       "text": "\u27e8x, y\u27e9:= x1y1 \u2212(x1y2 + x2y1) + 2(x2y2)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "4 Matrix Decompositions",
+   "order": 4,
+   "page_start": 104,
+   "page_end": 144,
+   "lessons": [
+    {
+     "title": "4.1 Determinant and Trace \u2014 part 1",
+     "order": 1,
+     "page_start": 105,
+     "page_end": 111,
+     "word_count": 1818,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.1 Determinant and Trace \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "4.1 Determinant and Trace 99"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 4.1 A mind map of the concepts introduced in this chapter, along with where they are used in other parts of the book."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "4.1 Determinant and Trace \u2014 part 2",
+     "order": 2,
+     "page_start": 105,
+     "page_end": 111,
+     "word_count": 687,
+     "est_minutes": 3,
+     "n_figures": 3,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.1 Determinant and Trace \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "for matrices A \u2208Ra\u00d7k, K \u2208Rk\u00d7l, L \u2208Rl\u00d7a. This property generalizes to products of an arbitrary number of matrices. As a special case of (4.19), it follows that for two vectors x, y \u2208Rn"
+      },
+      {
+       "type": "paragraph",
+       "text": "tr(xy\u22a4) = tr(y\u22a4x) = y\u22a4x \u2208R . (4.20)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "4.2 Eigenvalues and Eigenvectors \u2014 part 1",
+     "order": 3,
+     "page_start": 111,
+     "page_end": 120,
+     "word_count": 1826,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.2 Eigenvalues and Eigenvectors \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "4.2 Eigenvalues and Eigenvectors 105"
+      },
+      {
+       "type": "paragraph",
+       "text": "c0 = det(A) , (4.23) cn\u22121 = (\u22121)n\u22121tr(A) . (4.24)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "4.2 Eigenvalues and Eigenvectors \u2014 part 2",
+     "order": 4,
+     "page_start": 111,
+     "page_end": 120,
+     "word_count": 1822,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.2 Eigenvalues and Eigenvectors \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "A5 = \u00141 1 2 1 2 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "\u0015 is a shear-and-stretch mapping that scales space by 75%"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "4.2 Eigenvalues and Eigenvectors \u2014 part 3",
+     "order": 5,
+     "page_start": 111,
+     "page_end": 120,
+     "word_count": 9,
+     "est_minutes": 1,
+     "n_figures": 1,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.2 Eigenvalues and Eigenvectors \u2014 part 3"
+      },
+      {
+       "type": "paragraph",
+       "text": "Draft (2024-01-15) of \u201cMathematics for Machine Learning\u201d. Feedback: https://mml-book.com."
+      },
+      {
+       "type": "figure_ref",
+       "page": 116,
+       "bbox": [
+        184.1,
+        289.0,
+        296.9,
+        401.7
+       ],
+       "caption": "Figure 4.6 Geometric interpretation of eigenvalues. The eigenvectors of A get stretched by the corresponding eigenvalues. The area of the unit square changes by |\u03bb1\u03bb2|, the perimeter changes by a fact"
+      }
+     ]
+    },
+    {
+     "title": "4.3 Cholesky Decomposition",
+     "order": 6,
+     "page_start": 120,
+     "page_end": 121,
+     "word_count": 784,
+     "est_minutes": 4,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.3 Cholesky Decomposition"
+      },
+      {
+       "type": "paragraph",
+       "text": "on a different web site. The matrix A has the property that for any ini- tial rank/importance vector x of a web site the sequence x, Ax, A2x, . . . converges to a vector x\u2217. This vector is called the PageRank and satisfies PageRank Ax\u2217= x\u2217, i.e., it is an eigenvector (with corresponding eigenvalue 1) of A. After normalizing x\u2217, such that \u2225x\u2217\u2225= 1, we can interpret the entries as probabilities. More details and different perspectives on PageRank can be found in the original technical report (Page et al., 1999)."
+      },
+      {
+       "type": "paragraph",
+       "text": "There are many ways to factorize special types of matrices that we en- counter often in machine learning. In the positive real numbers, we have the square-root operation that gives us a decomposition of the number into identical components, e.g., 9 = 3 \u00b7 3. For matrices, we need to be careful that we compute a square-root-like operation on positive quanti- ties. For symmetric, positive definite matrices (see Section 3.2.3), we can choose from a number of square-root equivalent operations. The Cholesky Cholesky decomposition decomposition/Cholesky factorization provides a square-root equivalent op- Cholesky factorization eration on symmetric, positive definite matrices that is useful in practice."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "4.4 Eigendecomposition and Diagonalization \u2014 part 1",
+     "order": 7,
+     "page_start": 121,
+     "page_end": 125,
+     "word_count": 1821,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.4 Eigendecomposition and Diagonalization \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "4.4 Eigendecomposition and Diagonalization 115"
+      },
+      {
+       "type": "paragraph",
+       "text": "Comparing the left-hand side of (4.45) and the right-hand side of (4.46) shows that there is a simple pattern in the diagonal elements lii:"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "4.4 Eigendecomposition and Diagonalization \u2014 part 2",
+     "order": 8,
+     "page_start": 121,
+     "page_end": 125,
+     "word_count": 16,
+     "est_minutes": 1,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.4 Eigendecomposition and Diagonalization \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "\u00a92024 M. P. Deisenroth, A. A. Faisal, C. S. Ong. Published by Cambridge University Press (2020)."
+      }
+     ]
+    },
+    {
+     "title": "4.5 Singular Value Decomposition \u2014 part 1",
+     "order": 9,
+     "page_start": 125,
+     "page_end": 135,
+     "word_count": 1804,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.5 Singular Value Decomposition \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "4.5 Singular Value Decomposition 119"
+      },
+      {
+       "type": "paragraph",
+       "text": "= det(D) = Y"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "4.5 Singular Value Decomposition \u2014 part 2",
+     "order": 10,
+     "page_start": 125,
+     "page_end": 135,
+     "word_count": 1820,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.5 Singular Value Decomposition \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "AA\u22a4= (U\u03a3V \u22a4)(U\u03a3V \u22a4)\u22a4= U\u03a3V \u22a4V \u03a3\u22a4U \u22a4 (4.76a)"
+      },
+      {
+       "type": "paragraph",
+       "text": "\u03c32 1 0 0"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "4.5 Singular Value Decomposition \u2014 part 3",
+     "order": 11,
+     "page_start": 125,
+     "page_end": 135,
+     "word_count": 517,
+     "est_minutes": 3,
+     "n_figures": 1,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.5 Singular Value Decomposition \u2014 part 3"
+      },
+      {
+       "type": "paragraph",
+       "text": "Some authors define the SVD a bit differently and focus on square sin- gular matrices. Then, for A \u2208Rm\u00d7n and m \u2a7en,"
+      },
+      {
+       "type": "paragraph",
+       "text": "A m\u00d7n = U m\u00d7n \u03a3 n\u00d7n V \u22a4"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "4.6 Matrix Approximation \u2014 part 1",
+     "order": 12,
+     "page_start": 135,
+     "page_end": 140,
+     "word_count": 1808,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.6 Matrix Approximation \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "4.6 Matrix Approximation 129"
+      },
+      {
+       "type": "paragraph",
+       "text": "Sometimes this formulation is called the reduced SVD (e.g., Datta (2010)) reduced SVD or the SVD (e.g., Press et al. (2007)). This alternative format changes merely how the matrices are constructed but leaves the mathematical structure of the SVD unchanged. The convenience of this alternative formulation is that \u03a3 is diagonal, as in the eigenvalue decomposition. In Section 4.6, we will learn about matrix approximation techniques using the SVD, which is also called the truncated SVD. truncated SVD It is possible to define the SVD of a rank-r matrix A so that U is an m \u00d7 r matrix, \u03a3 a diagonal matrix r \u00d7 r, and V an r \u00d7 n matrix. This construction is very similar to our definition, and ensures that the diagonal matrix \u03a3 has only nonzero entries along the diagonal. The main convenience of this alternative notation is that \u03a3 is diagonal, as in the eigenvalue decomposition. A restriction that the SVD for A only applies to m \u00d7 n matrices with m > n is practically unnecessary. When m < n, the SVD decomposition will yield \u03a3 with more zero columns than rows and, consequently, the singular values \u03c3m+1, . . . , \u03c3n are 0."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "4.6 Matrix Approximation \u2014 part 2",
+     "order": 13,
+     "page_start": 135,
+     "page_end": 140,
+     "word_count": 246,
+     "est_minutes": 1,
+     "n_figures": 12,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.6 Matrix Approximation \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "Cholesky eigenvalues > 0"
+      },
+      {
+       "type": "paragraph",
+       "text": "No basis of eigenvectors"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "4.7 Matrix Phylogeny",
+     "order": 14,
+     "page_start": 140,
+     "page_end": 141,
+     "word_count": 713,
+     "est_minutes": 4,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.7 Matrix Phylogeny"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 4.13 A functional phylogeny of matrices encountered in machine learning."
+      },
+      {
+       "type": "paragraph",
+       "text": "Cholesky eigenvalues > 0"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "4.8 Further Reading",
+     "order": 15,
+     "page_start": 141,
+     "page_end": 142,
+     "word_count": 911,
+     "est_minutes": 5,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "4.8 Further Reading"
+      },
+      {
+       "type": "paragraph",
+       "text": "4.8 Further Reading 135"
+      },
+      {
+       "type": "paragraph",
+       "text": "We dive further into the branch of non-defective square n \u00d7 n matrices. A is normal if the condition A\u22a4A = AA\u22a4holds. Moreover, if the more restrictive condition holds that A\u22a4A = AA\u22a4= I, then A is called or- thogonal (see Definition 3.8). The set of orthogonal matrices is a subset of the regular (invertible) matrices and satisfies A\u22a4= A\u22121. Normal matrices have a frequently encountered subset, the symmetric matrices S \u2208Rn\u00d7n, which satisfy S = S\u22a4. Symmetric matrices have only real eigenvalues. A subset of the symmetric matrices consists of the pos- itive definite matrices P that satisfy the condition of x\u22a4P x > 0 for all x \u2208Rn\\{0}. In this case, a unique Cholesky decomposition exists (Theo- rem 4.18). Positive definite matrices have only positive eigenvalues and are always invertible (i.e., have a nonzero determinant). Another subset of symmetric matrices consists of the diagonal matrices D. Diagonal matrices are closed under multiplication and addition, but do not necessarily form a group (this is only the case if all diagonal entries are nonzero so that the matrix is invertible). A special diagonal matrix is the identity matrix I."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "Exercises \u2014 4 Matrix Decompositions",
+     "order": 16,
+     "page_start": 143,
+     "page_end": 144,
+     "word_count": 376,
+     "est_minutes": 2,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "Exercises \u2014 4 Matrix Decompositions"
+      },
+      {
+       "type": "paragraph",
+       "text": "4.1 Compute the determinant using the Laplace expansion (using the first row) and the Sarrus rule for"
+      },
+      {
+       "type": "paragraph",
+       "text": "\uf8f0 1 3 5 2 4 6 0 2 4"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "5 Vector Calculus",
+   "order": 5,
+   "page_start": 145,
+   "page_end": 177,
+   "lessons": [
+    {
+     "title": "5.1 Differentiation of Univariate Functions",
+     "order": 1,
+     "page_start": 147,
+     "page_end": 152,
+     "word_count": 1707,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "5.1 Differentiation of Univariate Functions"
+      },
+      {
+       "type": "paragraph",
+       "text": "5.1 Differentiation of Univariate Functions 141"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 5.3 The average incline of a function f between x0 and x0 + \u03b4x is the incline of the secant (blue) through f(x0) and f(x0 + \u03b4x) and given by \u03b4y/\u03b4x. \u03b4y"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "5.2 Partial Differentiation and Gradients",
+     "order": 2,
+     "page_start": 152,
+     "page_end": 155,
+     "word_count": 1397,
+     "est_minutes": 7,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "5.2 Partial Differentiation and Gradients"
+      },
+      {
+       "type": "paragraph",
+       "text": "such that the derivative of h is given as"
+      },
+      {
+       "type": "paragraph",
+       "text": "h\u2032(x) = g\u2032(f)f \u2032(x) = (4f 3) \u00b7 2 (5.34) = 4(2x + 1)3 \u00b7 2 = 8(2x + 1)3 , (5.38)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "5.3 Gradients of Vector-Valued Functions \u2014 part 1",
+     "order": 3,
+     "page_start": 155,
+     "page_end": 161,
+     "word_count": 1807,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "5.3 Gradients of Vector-Valued Functions \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "5.3 Gradients of Vector-Valued Functions 149"
+      },
+      {
+       "type": "paragraph",
+       "text": "and the gradient is obtained by the matrix multiplication"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "5.3 Gradients of Vector-Valued Functions \u2014 part 2",
+     "order": 4,
+     "page_start": 155,
+     "page_end": 161,
+     "word_count": 544,
+     "est_minutes": 3,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "5.3 Gradients of Vector-Valued Functions \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "= exp(x1x2 2) \u0000x2 2(cos t \u2212t sin t) + 2x1x2(sin t + t cos t) \u0001 , (5.74c)"
+      },
+      {
+       "type": "paragraph",
+       "text": "where x1 = t cos t and x2 = t sin t; see (5.72)."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "5.4 Gradients of Matrices",
+     "order": 5,
+     "page_start": 161,
+     "page_end": 164,
+     "word_count": 1040,
+     "est_minutes": 5,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "5.4 Gradients of Matrices"
+      },
+      {
+       "type": "paragraph",
+       "text": "5.4 Gradients of Matrices 155"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 5.7 Visualization of gradient computation of a matrix with respect to a vector. We are interested in computing the gradient of A \u2208R4\u00d72 with respect to a vector x \u2208R3. We know that gradient dA"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "5.5 Useful Identities for Computing Gradients",
+     "order": 6,
+     "page_start": 164,
+     "page_end": 165,
+     "word_count": 685,
+     "est_minutes": 3,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "5.5 Useful Identities for Computing Gradients"
+      },
+      {
+       "type": "paragraph",
+       "text": "\uf8f1 \uf8f4 \uf8f4 \uf8f2"
+      },
+      {
+       "type": "paragraph",
+       "text": "Riq if j = p, p \u0338= q Rip if j = q, p \u0338= q 2Riq if j = p, p = q 0 otherwise"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "5.6 Backpropagation and Automatic Differentiation \u2014 part 1",
+     "order": 7,
+     "page_start": 165,
+     "page_end": 170,
+     "word_count": 1832,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "5.6 Backpropagation and Automatic Differentiation \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "5.6 Backpropagation and Automatic Differentiation 159"
+      },
+      {
+       "type": "paragraph",
+       "text": "\u201ctranspose\u201d a tensor, we mean swapping the first two dimensions. Specif- ically, in (5.99) through (5.102), we require tensor-related computations when we work with multivariate functions f(\u00b7) and compute derivatives with respect to matrices (and choose not to vectorize them as discussed in Section 5.4). \u2662"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "5.6 Backpropagation and Automatic Differentiation \u2014 part 2",
+     "order": 8,
+     "page_start": 165,
+     "page_end": 170,
+     "word_count": 350,
+     "est_minutes": 2,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "5.6 Backpropagation and Automatic Differentiation \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "\u2202f \u2202xD = 1 . (5.144)"
+      },
+      {
+       "type": "paragraph",
+       "text": "For other variables xi, we apply the chain rule"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "5.7 Higher-Order Derivatives",
+     "order": 9,
+     "page_start": 170,
+     "page_end": 171,
+     "word_count": 691,
+     "est_minutes": 3,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "5.7 Higher-Order Derivatives"
+      },
+      {
+       "type": "paragraph",
+       "text": "where the gi(\u00b7) are elementary functions and xPa(xi) are the parent nodes of the variable xi in the graph. Given a function defined in this way, we can use the chain rule to compute the derivative of the function in a step- by-step fashion. Recall that by definition f = xD and hence"
+      },
+      {
+       "type": "paragraph",
+       "text": "\u2202f \u2202xD = 1 . (5.144)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "5.8 Linearization and Multivariate Taylor Series",
+     "order": 10,
+     "page_start": 171,
+     "page_end": 175,
+     "word_count": 1474,
+     "est_minutes": 7,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "5.8 Linearization and Multivariate Taylor Series"
+      },
+      {
+       "type": "paragraph",
+       "text": "5.8 Linearization and Multivariate Taylor Series 165"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 5.12 Linear approximation of a function. The original function f is linearized at x0 = \u22122 using a first-order Taylor series expansion."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "5.9 Further Reading",
+     "order": 11,
+     "page_start": 176,
+     "page_end": 177,
+     "word_count": 640,
+     "est_minutes": 3,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "5.9 Further Reading"
+      },
+      {
+       "type": "paragraph",
+       "text": "Further details of matrix differentials, along with a short review of the required linear algebra, can be found in Magnus and Neudecker (2007). Automatic differentiation has had a long history, and we refer to Griewank and Walther (2003), Griewank and Walther (2008), and Elliott (2009) and the references therein. In machine learning (and other disciplines), we often need to compute expectations, i.e., we need to solve integrals of the form"
+      },
+      {
+       "type": "paragraph",
+       "text": "Ex[f(x)] = Z f(x)p(x)dx . (5.181)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "6 Probability and Distributions",
+   "order": 6,
+   "page_start": 178,
+   "page_end": 230,
+   "lessons": [
+    {
+     "title": "6.1 Construction of a Probability Space \u2014 part 1",
+     "order": 1,
+     "page_start": 178,
+     "page_end": 184,
+     "word_count": 1947,
+     "est_minutes": 10,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.1 Construction of a Probability Space \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "Probability, loosely speaking, concerns the study of uncertainty. Probabil- ity can be thought of as the fraction of times an event occurs, or as a degree of belief about an event. We then would like to use this probability to mea- sure the chance of something occurring in an experiment. As mentioned in Chapter 1, we often quantify uncertainty in the data, uncertainty in the machine learning model, and uncertainty in the predictions produced by the model. Quantifying uncertainty requires the idea of a random variable, random variable which is a function that maps outcomes of random experiments to a set of properties that we are interested in. Associated with the random variable is a function that measures the probability that a particular outcome (or set of outcomes) will occur; this is called the probability distribution. probability distribution Probability distributions are used as a building block for other con- cepts, such as probabilistic modeling (Section 8.4), graphical models (Sec- tion 8.5), and model selection (Section 8.6). In the next section, we present the three concepts that define a probability space (the sample space, the events, and the probability of an event) and how they are related to a fourth concept called the random variable. The presentation is deliber- ately slightly hand wavy since a rigorous presentation may occlude the intuition behind the concepts. An outline of the concepts presented in this chapter are shown in Figure 6.1."
+      },
+      {
+       "type": "paragraph",
+       "text": "6.1 Construction of a Probability Space"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "6.1 Construction of a Probability Space \u2014 part 2",
+     "order": 2,
+     "page_start": 178,
+     "page_end": 184,
+     "word_count": 1143,
+     "est_minutes": 6,
+     "n_figures": 1,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.1 Construction of a Probability Space \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "X(($, $)) = 2 (6.1) X(($, \u00a3)) = 1 (6.2) X((\u00a3, $)) = 1 (6.3) X((\u00a3, \u00a3)) = 0 . (6.4)"
+      },
+      {
+       "type": "paragraph",
+       "text": "Since we return the first coin we draw before drawing the second, this implies that the two draws are independent of each other, which we will discuss in Section 6.4.5. Note that there are two experimental outcomes, which map to the same event, where only one of the draws returns $. Therefore, the probability mass function (Section 6.2.1) of X is given by"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "6.2 Discrete and Continuous Probabilities \u2014 part 1",
+     "order": 3,
+     "page_start": 184,
+     "page_end": 189,
+     "word_count": 1854,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.2 Discrete and Continuous Probabilities \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "178 Probability and Distributions"
+      },
+      {
+       "type": "paragraph",
+       "text": "seen so far. This analysis of future performance relies on probability and statistics, most of which is beyond what will be presented in this chapter. The interested reader is encouraged to look at the books by Boucheron et al. (2013) and Shalev-Shwartz and Ben-David (2014). We will see more about statistics in Chapter 8."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "6.2 Discrete and Continuous Probabilities \u2014 part 2",
+     "order": 4,
+     "page_start": 184,
+     "page_end": 189,
+     "word_count": 620,
+     "est_minutes": 3,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.2 Discrete and Continuous Probabilities \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "Example 6.3 We consider two examples of the uniform distribution, where each state is equally likely to occur. This example illustrates some differences between discrete and continuous probability distributions. Let Z be a discrete uniform random variable with three states {z = \u22121.1, z = 0.3, z = 1.5}. The probability mass function can be represented The actual values of these states are not meaningful here, and we deliberately chose numbers to drive home the point that we do not want to use (and should ignore) the ordering of the states."
+      },
+      {
+       "type": "paragraph",
+       "text": "as a table of probability values:"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "6.3 Sum Rule, Product Rule, and Bayes' Theorem",
+     "order": 5,
+     "page_start": 189,
+     "page_end": 192,
+     "word_count": 1806,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.3 Sum Rule, Product Rule, and Bayes' Theorem"
+      },
+      {
+       "type": "paragraph",
+       "text": "6.3 Sum Rule, Product Rule, and Bayes\u2019 Theorem 183"
+      },
+      {
+       "type": "paragraph",
+       "text": "Table 6.1 Nomenclature for probability distributions."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "6.4 Summary Statistics and Independence \u2014 part 1",
+     "order": 6,
+     "page_start": 192,
+     "page_end": 203,
+     "word_count": 1816,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.4 Summary Statistics and Independence \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "186 Probability and Distributions"
+      },
+      {
+       "type": "paragraph",
+       "text": "p(y) := Z p(y | x)p(x)dx = EX[p(y | x)] (6.27)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "6.4 Summary Statistics and Independence \u2014 part 2",
+     "order": 7,
+     "page_start": 192,
+     "page_end": 203,
+     "word_count": 1818,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.4 Summary Statistics and Independence \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "Draft (2024-01-15) of \u201cMathematics for Machine Learning\u201d. Feedback: https://mml-book.com."
+      },
+      {
+       "type": "paragraph",
+       "text": "6.4 Summary Statistics and Independence 191"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "6.4 Summary Statistics and Independence \u2014 part 3",
+     "order": 8,
+     "page_start": 192,
+     "page_end": 203,
+     "word_count": 804,
+     "est_minutes": 4,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.4 Summary Statistics and Independence \u2014 part 3"
+      },
+      {
+       "type": "paragraph",
+       "text": "p(x | y, z) = p(x | z) . (6.57)"
+      },
+      {
+       "type": "paragraph",
+       "text": "Equation (6.57) provides an alternative definition of conditional indepen- dence, i.e., X \u22a5\u22a5Y | Z. This alternative presentation provides the inter- pretation \u201cgiven that we know z, knowledge about y does not change our knowledge of x\u201d."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "6.5 Gaussian Distribution \u2014 part 1",
+     "order": 9,
+     "page_start": 203,
+     "page_end": 211,
+     "word_count": 1847,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.5 Gaussian Distribution \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "6.5 Gaussian Distribution 197"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 6.7 Gaussian distribution of two random variables x1 and x2."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "6.5 Gaussian Distribution \u2014 part 2",
+     "order": 10,
+     "page_start": 203,
+     "page_end": 211,
+     "word_count": 1579,
+     "est_minutes": 8,
+     "n_figures": 1,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.5 Gaussian Distribution \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "Theorem 6.12. Consider a mixture of two univariate Gaussian densities"
+      },
+      {
+       "type": "paragraph",
+       "text": "p(x) = \u03b1p1(x) + (1 \u2212\u03b1)p2(x) , (6.80)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "6.6 Conjugacy and the Exponential Family \u2014 part 1",
+     "order": 11,
+     "page_start": 211,
+     "page_end": 220,
+     "word_count": 1941,
+     "est_minutes": 10,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.6 Conjugacy and the Exponential Family \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "6.6 Conjugacy and the Exponential Family 205"
+      },
+      {
+       "type": "paragraph",
+       "text": "6.6 Conjugacy and the Exponential Family"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "6.6 Conjugacy and the Exponential Family \u2014 part 2",
+     "order": 12,
+     "page_start": 211,
+     "page_end": 220,
+     "word_count": 1745,
+     "est_minutes": 9,
+     "n_figures": 1,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.6 Conjugacy and the Exponential Family \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "Theorem 6.14 (Fisher-Neyman). [Theorem 6.5 in Lehmann and Casella (1998)] Let X have probability density function p(x | \u03b8). Then the statistics Fisher-Neyman theorem \u03d5(x) are sufficient for \u03b8 if and only if p(x | \u03b8) can be written in the form"
+      },
+      {
+       "type": "paragraph",
+       "text": "p(x | \u03b8) = h(x)g\u03b8(\u03d5(x)) , (6.106)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "6.7 Change of Variables/Inverse Transform \u2014 part 1",
+     "order": 13,
+     "page_start": 220,
+     "page_end": 227,
+     "word_count": 1810,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.7 Change of Variables/Inverse Transform \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "214 Probability and Distributions"
+      },
+      {
+       "type": "paragraph",
+       "text": "The canonical conjugate prior has the form"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "6.7 Change of Variables/Inverse Transform \u2014 part 2",
+     "order": 14,
+     "page_start": 220,
+     "page_end": 227,
+     "word_count": 1325,
+     "est_minutes": 7,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.7 Change of Variables/Inverse Transform \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "Using (6.140) on the right-hand side of (6.139) gives us"
+      },
+      {
+       "type": "paragraph",
+       "text": "a fx(U \u22121(y))U \u22121\u2032(y)dy . (6.141)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "6.8 Further Reading",
+     "order": 15,
+     "page_start": 227,
+     "page_end": 227,
+     "word_count": 471,
+     "est_minutes": 2,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "6.8 Further Reading"
+      },
+      {
+       "type": "paragraph",
+       "text": "6.8 Further Reading 221"
+      },
+      {
+       "type": "paragraph",
+       "text": "in Section 8.4, as well as introduce a graphical language in Section 8.5. We will see direct machine learning applications of these ideas in Chapters 9 and 11."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "Exercises \u2014 6 Probability and Distributions",
+     "order": 16,
+     "page_start": 228,
+     "page_end": 230,
+     "word_count": 989,
+     "est_minutes": 5,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "Exercises \u2014 6 Probability and Distributions"
+      },
+      {
+       "type": "paragraph",
+       "text": "222 Probability and Distributions"
+      },
+      {
+       "type": "paragraph",
+       "text": "6.1 Consider the following bivariate distribution p(x, y) of two discrete random variables X and Y ."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "7 Continuous Optimization",
+   "order": 7,
+   "page_start": 231,
+   "page_end": 256,
+   "lessons": [
+    {
+     "title": "7.1 Optimization Using Gradient Descent \u2014 part 1",
+     "order": 1,
+     "page_start": 233,
+     "page_end": 239,
+     "word_count": 1805,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "7.1 Optimization Using Gradient Descent \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "7.1 Optimization Using Gradient Descent 227"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 7.2 Example objective function. Negative gradients are indicated by arrows, and the global minimum is indicated by the dashed blue line."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "7.1 Optimization Using Gradient Descent \u2014 part 2",
+     "order": 2,
+     "page_start": 233,
+     "page_end": 239,
+     "word_count": 810,
+     "est_minutes": 4,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "7.1 Optimization Using Gradient Descent \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "where xn \u2208RD are the training inputs, yn are the training targets, and \u03b8 are the parameters of the regression model. Standard gradient descent, as introduced previously, is a \u201cbatch\u201d opti- mization method, i.e., optimization is performed using the full training set"
+      },
+      {
+       "type": "paragraph",
+       "text": "\u00a92024 M. P. Deisenroth, A. A. Faisal, C. S. Ong. Published by Cambridge University Press (2020)."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "7.2 Constrained Optimization and Lagrange Multipliers",
+     "order": 3,
+     "page_start": 239,
+     "page_end": 242,
+     "word_count": 1525,
+     "est_minutes": 8,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "7.2 Constrained Optimization and Lagrange Multipliers"
+      },
+      {
+       "type": "paragraph",
+       "text": "7.2 Constrained Optimization and Lagrange Multipliers 233"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 7.4 Illustration of constrained optimization. The unconstrained problem (indicated by the contour lines) has a minimum on the right side (indicated by the circle). The box constraints (\u22121 \u2a7dx \u2a7d1 and \u22121 \u2a7dy \u2a7d1) require that the optimal solution is within the box, resulting in an optimal value indicated by the star."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "7.3 Convex Optimization \u2014 part 1",
+     "order": 4,
+     "page_start": 242,
+     "page_end": 252,
+     "word_count": 1800,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "7.3 Convex Optimization \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "We can model equality constraints by replacing them with two inequality constraints. That is for each equality constraint hj(x) = 0 we equivalently replace it by two constraints hj(x) \u2a7d0 and hj(x) \u2a7e0. It turns out that the resulting Lagrange multipliers are then unconstrained. Therefore, we constrain the Lagrange multipliers corresponding to the inequality constraints in (7.28) to be non-negative, and leave the La- grange multipliers corresponding to the equality constraints unconstrained. \u2662"
+      },
+      {
+       "type": "paragraph",
+       "text": "We focus our attention of a particularly useful class of optimization prob- lems, where we can guarantee global optimality. When f(\u00b7) is a convex function, and when the constraints involving g(\u00b7) and h(\u00b7) are convex sets, this is called a convex optimization problem. In this setting, we have strong convex optimization problem"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "7.3 Convex Optimization \u2014 part 2",
+     "order": 5,
+     "page_start": 242,
+     "page_end": 252,
+     "word_count": 1910,
+     "est_minutes": 10,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "7.3 Convex Optimization \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "Qx + (c + A\u22a4\u03bb) = 0 . (7.49)"
+      },
+      {
+       "type": "paragraph",
+       "text": "Since Q is positive definite and therefore invertible, we get"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "7.3 Convex Optimization \u2014 part 3",
+     "order": 6,
+     "page_start": 242,
+     "page_end": 252,
+     "word_count": 89,
+     "est_minutes": 1,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "7.3 Convex Optimization \u2014 part 3"
+      },
+      {
+       "type": "paragraph",
+       "text": "Modern applications of machine learning often mean that the size of datasets prohibit the use of batch gradient descent, and hence stochastic gradient descent is the current workhorse of large-scale machine learning methods. Recent surveys of the literature include Hazan (2015) and Bot- tou et al. (2018). For duality and convex optimization, the book by Boyd and Vanden- berghe (2004) includes lectures and slides online. A more mathematical treatment is provided by Bertsekas (2009), and recent book by one of"
+      },
+      {
+       "type": "paragraph",
+       "text": "Draft (2024-01-15) of \u201cMathematics for Machine Learning\u201d. Feedback: https://mml-book.com."
+      }
+     ]
+    },
+    {
+     "title": "7.4 Further Reading",
+     "order": 7,
+     "page_start": 252,
+     "page_end": 252,
+     "word_count": 459,
+     "est_minutes": 2,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "7.4 Further Reading"
+      },
+      {
+       "type": "paragraph",
+       "text": "The Legendre-Fenchel conjugate turns out to be quite useful for ma- chine learning problems that can be expressed as convex optimization problems. In particular, for convex loss functions that apply independently to each example, the conjugate loss is a convenient way to derive a dual problem."
+      },
+      {
+       "type": "paragraph",
+       "text": "Continuous optimization is an active area of research, and we do not try to provide a comprehensive account of recent advances. From a gradient descent perspective, there are two major weaknesses which each have their own set of literature. The first challenge is the fact that gradient descent is a first-order algorithm, and does not use infor- mation about the curvature of the surface. When there are long valleys, the gradient points perpendicularly to the direction of interest. The idea of momentum can be generalized to a general class of acceleration meth- ods (Nesterov, 2018). Conjugate gradient methods avoid the issues faced by gradient descent by taking previous directions into account (Shewchuk, 1994). Second-order methods such as Newton methods use the Hessian to provide information about the curvature. Many of the choices for choos- ing step-sizes and ideas like momentum arise by considering the curvature of the objective function (Goh, 2017; Bottou et al., 2018). Quasi-Newton methods such as L-BFGS try to use cheaper computational methods to ap- proximate the Hessian (Nocedal and Wright, 2006). Recently there has been interest in other metrics for computing descent directions, result- ing in approaches such as mirror descent (Beck and Teboulle, 2003) and natural gradient (Toussaint, 2012). The second challenge is to handle non-differentiable functions. Gradi- ent methods are not well defined when there are kinks in the function. In these cases, subgradient methods can be used (Shor, 1985). For fur- ther information and algorithms for optimizing non-differentiable func- tions, we refer to the book by Bertsekas (1999). There is a vast amount of literature on different approaches for numerically solving continuous optimization problems, including algorithms for constrained optimization problems. Good starting points to appreciate this literature are the books by Luenberger (1969) and Bonnans et al. (2006). A recent survey of con- tinuous optimization is provided by Bubeck (2015). Hugo Gonc\u00b8alves\u2019 blog is also a good resource for an easier introduction to Legendre\u2013Fenchel transforms: https://tinyurl. com/ydaal7hj"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "Exercises \u2014 7 Continuous Optimization",
+     "order": 8,
+     "page_start": 253,
+     "page_end": 256,
+     "word_count": 632,
+     "est_minutes": 3,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "Exercises \u2014 7 Continuous Optimization"
+      },
+      {
+       "type": "paragraph",
+       "text": "the key researchers in the area of optimization is Nesterov (2018). Con- vex optimization is based upon convex analysis, and the reader interested in more foundational results about convex functions is referred to Rock- afellar (1970), Hiriart-Urruty and Lemar\u00b4echal (2001), and Borwein and Lewis (2006). Legendre\u2013Fenchel transforms are also covered in the afore- mentioned books on convex analysis, but a more beginner-friendly pre- sentation is available at Zia et al. (2009). The role of Legendre\u2013Fenchel transforms in the analysis of convex optimization algorithms is surveyed in Polyak (2016)."
+      },
+      {
+       "type": "paragraph",
+       "text": "7.1 Consider the univariate function"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "8 When Models Meet Data",
+   "order": 8,
+   "page_start": 257,
+   "page_end": 294,
+   "lessons": [
+    {
+     "title": "8.1 Data, Models, and Learning \u2014 part 1",
+     "order": 1,
+     "page_start": 257,
+     "page_end": 264,
+     "word_count": 1803,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "8.1 Data, Models, and Learning \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "When Models Meet Data"
+      },
+      {
+       "type": "paragraph",
+       "text": "In the first part of the book, we introduced the mathematics that form the foundations of many machine learning methods. The hope is that a reader would be able to learn the rudimentary forms of the language of mathematics from the first part, which we will now use to describe and discuss machine learning. The second part of the book introduces four pillars of machine learning:"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "8.1 Data, Models, and Learning \u2014 part 2",
+     "order": 2,
+     "page_start": 257,
+     "page_end": 264,
+     "word_count": 1504,
+     "est_minutes": 8,
+     "n_figures": 1,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "8.1 Data, Models, and Learning \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "Once we have data in an appropriate vector representation, we can get to the business of constructing a predictive function (known as a predictor). predictor In Chapter 1, we did not yet have the language to be precise about models. Using the concepts from the first part of the book, we can now introduce what \u201cmodel\u201d means. We present two major approaches in this book: a predictor as a function, and a predictor as a probabilistic model. We de- scribe the former here and the latter in the next subsection. A predictor is a function that, when given a particular input example (in our case, a vector of features), produces an output. For now, consider the output to be a single number, i.e., a real-valued scalar output. This can be written as f : RD \u2192R , (8.1)"
+      },
+      {
+       "type": "paragraph",
+       "text": "where the input vector x is D-dimensional (has D features), and the func- tion f then applied to it (written as f(x)) returns a real number. Fig- ure 8.2 illustrates a possible function that can be used to compute the value of the prediction for input values x. In this book, we do not consider the general case of all functions, which would involve the need for functional analysis. Instead, we consider the special case of linear functions"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "8.2 Empirical Risk Minimization \u2014 part 1",
+     "order": 3,
+     "page_start": 264,
+     "page_end": 271,
+     "word_count": 1813,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "8.2 Empirical Risk Minimization \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "258 When Models Meet Data"
+      },
+      {
+       "type": "paragraph",
+       "text": "the model to only fit the training data well, the predictor needs to per- form well on unseen data. We simulate the behavior of our predictor on future unseen data using cross-validation (Section 8.2.4). As we will see cross-validation in this chapter, to achieve the goal of performing well on unseen data, we will need to balance between fitting well on training data and finding \u201csimple\u201d explanations of the phenomenon. This trade-off is achieved us- ing regularization (Section 8.2.3) or by adding a prior (Section 8.3.2). In philosophy, this is considered to be neither induction nor deduction, but is called abduction. According to the Stanford Encyclopedia of Philosophy, abduction abduction is the process of inference to the best explanation (Douven, 2017). A good movie title is \u201cAI abduction\u201d. We often need to make high-level modeling decisions about the struc- ture of the predictor, such as the number of components to use or the class of probability distributions to consider. The choice of the number of components is an example of a hyperparameter, and this choice can af- hyperparameter fect the performance of the model significantly. The problem of choosing among different models is called model selection, which we describe in model selection Section 8.6. For non-probabilistic models, model selection is often done using nested cross-validation, which is described in Section 8.6.1. We also nested cross-validation use model selection to choose hyperparameters of our model."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "8.2 Empirical Risk Minimization \u2014 part 2",
+     "order": 4,
+     "page_start": 264,
+     "page_end": 271,
+     "word_count": 1679,
+     "est_minutes": 8,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "8.2 Empirical Risk Minimization \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "of functions for the predictor f, we can essentially memorize the training data to obtain zero empirical risk. While this is great to minimize the loss (and therefore the risk) on the training data, we would not expect the predictor to generalize well to unseen data. In practice, we have only a finite set of data, and hence we split our data into a training and a test set. The training set is used to fit the model, and the test set (not seen by the machine learning algorithm during training) is used to evaluate generalization performance. It is important for the user to not cycle back to a new round of training after having observed the test set. We use the subscripts train and test to denote the training and test sets, respectively. We will revisit this idea of using a finite dataset to evaluate expected risk in Section 8.2.4. It turns out that empirical risk minimization can lead to overfitting, i.e., overfitting the predictor fits too closely to the training data and does not general- ize well to new data (Mitchell, 1997). This general phenomenon of hav- ing very small average loss on the training set but large average loss on the test set tends to occur when we have little data and a complex hy- pothesis class. For a particular predictor f (with parameters fixed), the phenomenon of overfitting occurs when the risk estimate from the train- ing data Remp(f, Xtrain, ytrain) underestimates the expected risk Rtrue(f). Since we estimate the expected risk Rtrue(f) by using the empirical risk on the test set Remp(f, Xtest, ytest) if the test risk is much larger than the training risk, this is an indication of overfitting. We revisit the idea of overfitting in Section 8.3.3. Therefore, we need to somehow bias the search for the minimizer of empirical risk by introducing a penalty term, which makes it harder for the optimizer to return an overly flexible predictor. In machine learning, the penalty term is referred to as regularization. Regularization is a way regularization to compromise between accurate solution of empirical risk minimization and the size or complexity of the solution."
+      },
+      {
+       "type": "paragraph",
+       "text": "Example 8.3 (Regularized Least Squares) Regularization is an approach that discourages complex or extreme solu- tions to an optimization problem. The simplest regularization strategy is"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "8.3 Parameter Estimation \u2014 part 1",
+     "order": 5,
+     "page_start": 271,
+     "page_end": 278,
+     "word_count": 1831,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "8.3 Parameter Estimation \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "8.3 Parameter Estimation 265"
+      },
+      {
+       "type": "paragraph",
+       "text": "Due to the fact that the original development of empirical risk minimiza- tion (Vapnik, 1998) was couched in heavily theoretical language, many of the subsequent developments have been theoretical. The area of study is called statistical learning theory (Vapnik, 1999; Evgeniou et al., 2000; statistical learning theory Hastie et al., 2001; von Luxburg and Sch\u00a8olkopf, 2011). A recent machine learning textbook that builds on the theoretical foundations and develops efficient learning algorithms is Shalev-Shwartz and Ben-David (2014). The concept of regularization has its roots in the solution of ill-posed in- verse problems (Neumaier, 1998). The approach presented here is called Tikhonov regularization, and there is a closely related constrained version Tikhonov regularization called Ivanov regularization. Tikhonov regularization has deep relation- ships to the bias-variance trade-off and feature selection (B\u00a8uhlmann and Van De Geer, 2011). An alternative to cross-validation is bootstrap and jackknife (Efron and Tibshirani, 1993; Davidson and Hinkley, 1997; Hall, 1992). Thinking about empirical risk minimization (Section 8.2) as \u201cprobabil- ity free\u201d is incorrect. There is an underlying unknown probability distri- bution p(x, y) that governs the data generation. However, the approach of empirical risk minimization is agnostic to that choice of distribution. This is in contrast to standard statistical approaches that explicitly re- quire the knowledge of p(x, y). Furthermore, since the distribution is a joint distribution on both examples x and labels y, the labels can be non- deterministic. In contrast to standard statistics we do not need to specify the noise distribution for the labels y."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "8.3 Parameter Estimation \u2014 part 2",
+     "order": 6,
+     "page_start": 271,
+     "page_end": 278,
+     "word_count": 1413,
+     "est_minutes": 7,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "8.3 Parameter Estimation \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "The idea of including prior knowledge about where good parameters lie is widespread in machine learning. An alternative view, which we saw in Section 8.2.3, is the idea of regularization, which introduces an addi- tional term that biases the resulting parameters to be close to the origin. Maximum a posteriori estimation can be considered to bridge the non- probabilistic and probabilistic worlds as it explicitly acknowledges the need for a prior distribution but it still only produces a point estimate of the parameters."
+      },
+      {
+       "type": "paragraph",
+       "text": "Remark. The maximum likelihood estimate \u03b8ML possesses the following properties (Lehmann and Casella, 1998; Efron and Hastie, 2016):"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "8.4 Probabilistic Modeling and Inference \u2014 part 1",
+     "order": 7,
+     "page_start": 278,
+     "page_end": 284,
+     "word_count": 1800,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "8.4 Probabilistic Modeling and Inference \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "272 When Models Meet Data"
+      },
+      {
+       "type": "paragraph",
+       "text": "this is the model class we would want to work with since it has good generalization properties. In practice, we often define very rich model classes M\u03b8 with many pa- rameters, such as deep neural networks. To mitigate the problem of over- fitting, we can use regularization (Section 8.2.3) or priors (Section 8.3.2). We will discuss how to choose the model class in Section 8.6."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "8.4 Probabilistic Modeling and Inference \u2014 part 2",
+     "order": 8,
+     "page_start": 278,
+     "page_end": 284,
+     "word_count": 1329,
+     "est_minutes": 7,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "8.4 Probabilistic Modeling and Inference \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "276 When Models Meet Data"
+      },
+      {
+       "type": "paragraph",
+       "text": "may make the model structure and the generative process easier, learning in latent-variable models is generally hard, as we will see in Chapter 11. Since latent-variable models also allow us to define the process that generates data from parameters, let us have a look at this generative pro- cess. Denoting data by x, the model parameters by \u03b8 and the latent vari- ables by z, we obtain the conditional distribution"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "8.5 Directed Graphical Models \u2014 part 1",
+     "order": 9,
+     "page_start": 284,
+     "page_end": 289,
+     "word_count": 1978,
+     "est_minutes": 10,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "8.5 Directed Graphical Models \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "278 When Models Meet Data"
+      },
+      {
+       "type": "paragraph",
+       "text": "2017) are used. Moustaki et al. (2015) and Paquet (2008) provide a good overview of Bayesian inference in latent-variable models. In recent years, several programming languages have been proposed that aim to treat the variables defined in software as random variables corresponding to probability distributions. The objective is to be able to write complex functions of probability distributions, while under the hood the compiler automatically takes care of the rules of Bayesian inference. This rapidly changing field is called probabilistic programming. probabilistic programming"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "8.5 Directed Graphical Models \u2014 part 2",
+     "order": 10,
+     "page_start": 284,
+     "page_end": 289,
+     "word_count": 175,
+     "est_minutes": 1,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "8.5 Directed Graphical Models \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "In machine learning, we often need to make high-level modeling decisions that critically influence the performance of the model. The choices we make (e.g., the functional form of the likelihood) influence the number and type of free parameters in the model and thereby also the flexibility and expressivity of the model. More complex models are more flexible in A polynomial y = a0 +a1x+a2x2"
+      },
+      {
+       "type": "paragraph",
+       "text": "can also describe linear functions by setting a2 = 0, i.e., it is strictly more expressive than a first-order polynomial."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "8.6 Model Selection \u2014 part 1",
+     "order": 11,
+     "page_start": 289,
+     "page_end": 294,
+     "word_count": 1802,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "8.6 Model Selection \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "8.6 Model Selection 283"
+      },
+      {
+       "type": "paragraph",
+       "text": "An introduction to probabilistic graphical models can be found in Bishop (2006, chapter 8), and an extensive description of the different applica- tions and corresponding algorithmic implications can be found in the book by Koller and Friedman (2009). There are three main types of probabilistic graphical models: directed graphical model Directed graphical models (Bayesian networks); see Figure 8.12(a)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "8.6 Model Selection \u2014 part 2",
+     "order": 12,
+     "page_start": 289,
+     "page_end": 294,
+     "word_count": 760,
+     "est_minutes": 4,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "8.6 Model Selection \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "p(M1 | D) p(M2 | D) | {z } posterior odds"
+      },
+      {
+       "type": "paragraph",
+       "text": "p(D) p(D | M2)p(M2)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "9 Linear Regression",
+   "order": 9,
+   "page_start": 295,
+   "page_end": 322,
+   "lessons": [
+    {
+     "title": "9.1 Problem Formulation",
+     "order": 1,
+     "page_start": 297,
+     "page_end": 298,
+     "word_count": 879,
+     "est_minutes": 4,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "9.1 Problem Formulation"
+      },
+      {
+       "type": "paragraph",
+       "text": "9.1 Problem Formulation 291"
+      },
+      {
+       "type": "paragraph",
+       "text": "Because of the presence of observation noise, we will adopt a probabilis- tic approach and explicitly model the noise using a likelihood function. More specifically, throughout this chapter, we consider a regression prob- lem with the likelihood function"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "9.2 Parameter Estimation \u2014 part 1",
+     "order": 2,
+     "page_start": 298,
+     "page_end": 309,
+     "word_count": 1804,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "9.2 Parameter Estimation \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "292 Linear Regression Figure 9.2 Linear regression example. (a) Example functions that fall into this category; (b) training set; (c) maximum likelihood estimate."
+      },
+      {
+       "type": "paragraph",
+       "text": "\u221210 0 10 x"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "9.2 Parameter Estimation \u2014 part 2",
+     "order": 3,
+     "page_start": 298,
+     "page_end": 309,
+     "word_count": 1802,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "9.2 Parameter Estimation \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "1 x1 x2 1 1 x2 x2 2 ... ... ... 1 xN x2 N"
+      },
+      {
+       "type": "paragraph",
+       "text": "With the feature matrix \u03a6 defined in (9.16), the negative log-likelihood for the linear regression model (9.13) can be written as"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "9.2 Parameter Estimation \u2014 part 3",
+     "order": 4,
+     "page_start": 298,
+     "page_end": 309,
+     "word_count": 1100,
+     "est_minutes": 6,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "9.2 Parameter Estimation \u2014 part 3"
+      },
+      {
+       "type": "paragraph",
+       "text": "d\u03b8 \u2212d log p(\u03b8)"
+      },
+      {
+       "type": "paragraph",
+       "text": "where we identify the first term on the right-hand side as the gradient of the negative log-likelihood from (9.11c). With a (conjugate) Gaussian prior p(\u03b8) = N \u00000, b2I \u0001 on the parameters \u03b8, the negative log-posterior for the linear regression setting (9.13), we obtain the negative log posterior"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "9.3 Bayesian Linear Regression \u2014 part 1",
+     "order": 5,
+     "page_start": 309,
+     "page_end": 319,
+     "word_count": 1850,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "9.3 Bayesian Linear Regression \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "9.3 Bayesian Linear Regression 303"
+      },
+      {
+       "type": "paragraph",
+       "text": "useful for variable selection. For p = 1, the regularizer is called LASSO LASSO (least absolute shrinkage and selection operator) and was proposed by Tib- shirani (1996). \u2662"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "9.3 Bayesian Linear Regression \u2014 part 2",
+     "order": 6,
+     "page_start": 309,
+     "page_end": 319,
+     "word_count": 1817,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "9.3 Bayesian Linear Regression \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "2(\u03b8 \u2212mN)\u22a4S\u22121 N (\u03b8 \u2212mN) + const (9.48a)"
+      },
+      {
+       "type": "paragraph",
+       "text": "\u0000\u03b8\u22a4S\u22121 N \u03b8 \u22122m\u22a4 NS\u22121 N \u03b8 + m\u22a4 NS\u22121 N mN \u0001 . (9.48b)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "9.3 Bayesian Linear Regression \u2014 part 3",
+     "order": 7,
+     "page_start": 309,
+     "page_end": 319,
+     "word_count": 413,
+     "est_minutes": 2,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "9.3 Bayesian Linear Regression \u2014 part 3"
+      },
+      {
+       "type": "paragraph",
+       "text": "E[Y | X] = E\u03b8,\u03f5[X\u03b8 + \u03f5] = XE\u03b8[\u03b8] = Xm0 . (9.62)"
+      },
+      {
+       "type": "paragraph",
+       "text": "Note that \u03f5 \u223cN \u00000, \u03c32I \u0001 is a vector of i.i.d. random variables. The covariance matrix is given as"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "9.4 Maximum Likelihood as Orthogonal Projection",
+     "order": 8,
+     "page_start": 319,
+     "page_end": 321,
+     "word_count": 1318,
+     "est_minutes": 7,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "9.4 Maximum Likelihood as Orthogonal Projection"
+      },
+      {
+       "type": "paragraph",
+       "text": "9.4 Maximum Likelihood as Orthogonal Projection 313"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 9.12 Geometric interpretation of least squares. (a) Dataset; (b) maximum likelihood solution interpreted as a projection. \u22124 \u22122 0 2 4 x"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "9.5 Further Reading",
+     "order": 9,
+     "page_start": 321,
+     "page_end": 322,
+     "word_count": 985,
+     "est_minutes": 5,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "9.5 Further Reading"
+      },
+      {
+       "type": "paragraph",
+       "text": "9.5 Further Reading 315"
+      },
+      {
+       "type": "paragraph",
+       "text": "When the basis is not orthogonal, one can convert a set of linearly inde- pendent basis functions to an orthogonal basis by using the Gram-Schmidt process; see Section 3.8.3 and (Strang, 2003)."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "10 Dimensionality Reduction with Principal Component Analysis",
+   "order": 10,
+   "page_start": 323,
+   "page_end": 353,
+   "lessons": [
+    {
+     "title": "10.1 Problem Setting",
+     "order": 1,
+     "page_start": 324,
+     "page_end": 326,
+     "word_count": 1037,
+     "est_minutes": 5,
+     "n_figures": 10,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "10.1 Problem Setting"
+      },
+      {
+       "type": "paragraph",
+       "text": "318 Dimensionality Reduction with Principal Component Analysis"
+      },
+      {
+       "type": "paragraph",
+       "text": "signal processing community, PCA is also known as the Karhunen-Lo`eve Karhunen-Lo`eve transform transform. In this chapter, we derive PCA from first principles, drawing on our understanding of basis and basis change (Sections 2.6.1 and 2.7.2), projections (Section 3.8), eigenvalues (Section 4.2), Gaussian distribu- tions (Section 6.5), and constrained optimization (Section 7.2). Dimensionality reduction generally exploits a property of high-dimen- sional data (e.g., images) that it often lies on a low-dimensional subspace. Figure 10.1 gives an illustrative example in two dimensions. Although the data in Figure 10.1(a) does not quite lie on a line, the data does not vary much in the x2-direction, so that we can express it as if it were on a line \u2013 with nearly no loss; see Figure 10.1(b). To describe the data in Figure 10.1(b), only the x1-coordinate is required, and the data lies in a one-dimensional subspace of R2."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "10.2 Maximum Variance Perspective \u2014 part 1",
+     "order": 2,
+     "page_start": 326,
+     "page_end": 331,
+     "word_count": 1801,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "10.2 Maximum Variance Perspective \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "320 Dimensionality Reduction with Principal Component Analysis"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 10.3 Examples of handwritten digits from the MNIST dataset. http: //yann.lecun. com/exdb/mnist/."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "10.2 Maximum Variance Perspective \u2014 part 2",
+     "order": 3,
+     "page_start": 326,
+     "page_end": 331,
+     "word_count": 310,
+     "est_minutes": 2,
+     "n_figures": 10,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "10.2 Maximum Variance Perspective \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "0 50 100 150 200 Number of principal components"
+      },
+      {
+       "type": "paragraph",
+       "text": "(b) Variance captured by the principal compo- nents."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "10.3 Projection Perspective \u2014 part 1",
+     "order": 4,
+     "page_start": 331,
+     "page_end": 339,
+     "word_count": 1838,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "10.3 Projection Perspective \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "10.3 Projection Perspective 325"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 10.6 Illustration of the projection approach: Find a subspace (line) that minimizes the length of the difference vector between projected (orange) and original (blue) data."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "10.3 Projection Perspective \u2014 part 2",
+     "order": 5,
+     "page_start": 331,
+     "page_end": 339,
+     "word_count": 1260,
+     "est_minutes": 6,
+     "n_figures": 8,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "10.3 Projection Perspective \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "m=1 zmnbm (10.32) ="
+      },
+      {
+       "type": "paragraph",
+       "text": "m=1 (x\u22a4 n bm)bm . (10.35)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "10.4 Eigenvector Computation and Low-Rank Approximations",
+     "order": 6,
+     "page_start": 339,
+     "page_end": 341,
+     "word_count": 1242,
+     "est_minutes": 6,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "10.4 Eigenvector Computation and Low-Rank Approximations"
+      },
+      {
+       "type": "paragraph",
+       "text": "10.4 Eigenvector Computation and Low-Rank Approximations 333"
+      },
+      {
+       "type": "paragraph",
+       "text": "cluster. Four embeddings of the digits \u201c0\u201d and \u201c1\u201d in the principal subspace are highlighted in red with their corresponding original digit. The figure reveals that the variation within the set of \u201c0\u201d is significantly greater than the variation within the set of \u201c1\u201d."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "10.5 PCA in High Dimensions",
+     "order": 7,
+     "page_start": 341,
+     "page_end": 342,
+     "word_count": 886,
+     "est_minutes": 4,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "10.5 PCA in High Dimensions"
+      },
+      {
+       "type": "paragraph",
+       "text": "10.5 PCA in High Dimensions 335"
+      },
+      {
+       "type": "paragraph",
+       "text": "the null space of S and follows the iteration"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "10.6 Key Steps of PCA in Practice",
+     "order": 8,
+     "page_start": 342,
+     "page_end": 345,
+     "word_count": 1309,
+     "est_minutes": 7,
+     "n_figures": 20,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "10.6 Key Steps of PCA in Practice"
+      },
+      {
+       "type": "paragraph",
+       "text": "336 Dimensionality Reduction with Principal Component Analysis"
+      },
+      {
+       "type": "paragraph",
+       "text": "and we get a new eigenvector/eigenvalue equation: \u03bbm remains eigen- value, which confirms our results from Section 4.5.3 that the nonzero eigenvalues of XX\u22a4equal the nonzero eigenvalues of X\u22a4X. We obtain the eigenvector of the matrix 1 N X\u22a4X \u2208RN\u00d7N associated with \u03bbm as cm := X\u22a4bm. Assuming we have no duplicate data points, this matrix has rank N and is invertible. This also implies that 1 N X\u22a4X has the same (nonzero) eigenvalues as the data covariance matrix S. But this is now an N \u00d7 N matrix, so that we can compute the eigenvalues and eigenvectors much more efficiently than for the original D \u00d7D data covariance matrix. Now that we have the eigenvectors of 1 N X\u22a4X, we are going to re- cover the original eigenvectors, which we still need for PCA. Currently, we know the eigenvectors of 1 N X\u22a4X. If we left-multiply our eigenvalue/ eigenvector equation with X, we get"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "10.7 Latent Variable Perspective",
+     "order": 9,
+     "page_start": 345,
+     "page_end": 349,
+     "word_count": 1756,
+     "est_minutes": 9,
+     "n_figures": 8,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "10.7 Latent Variable Perspective"
+      },
+      {
+       "type": "paragraph",
+       "text": "10.7 Latent Variable Perspective 339"
+      },
+      {
+       "type": "paragraph",
+       "text": "cipal components, we effectively obtain a near-perfect reconstruction. If we were to choose 784 PCs, we would recover the exact digit without any compression loss. Figure 10.13 shows the average squared reconstruction error, which is"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "10.8 Further Reading \u2014 part 1",
+     "order": 10,
+     "page_start": 349,
+     "page_end": 353,
+     "word_count": 1849,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "10.8 Further Reading \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "10.8 Further Reading 343"
+      },
+      {
+       "type": "paragraph",
+       "text": "rules of Gaussian conditioning from Section 6.5.1. The posterior distribu- tion of the latent variable given an observation x is then"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "10.8 Further Reading \u2014 part 2",
+     "order": 11,
+     "page_start": 349,
+     "page_end": 353,
+     "word_count": 384,
+     "est_minutes": 2,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "10.8 Further Reading \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "Draft (2024-01-15) of \u201cMathematics for Machine Learning\u201d. Feedback: https://mml-book.com."
+      },
+      {
+       "type": "paragraph",
+       "text": "10.8 Further Reading 347"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "11 Density Estimation with Gaussian Mixture Models",
+   "order": 11,
+   "page_start": 354,
+   "page_end": 375,
+   "lessons": [
+    {
+     "title": "11.1 Gaussian Mixture Model",
+     "order": 1,
+     "page_start": 355,
+     "page_end": 356,
+     "word_count": 624,
+     "est_minutes": 3,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "11.1 Gaussian Mixture Model"
+      },
+      {
+       "type": "paragraph",
+       "text": "11.1 Gaussian Mixture Model 349"
+      },
+      {
+       "type": "paragraph",
+       "text": "In practice, the Gaussian (or similarly all other distributions we encoun- tered so far) have limited modeling capabilities. For example, a Gaussian approximation of the density that generated the data in Figure 11.1 would be a poor approximation. In the following, we will look at a more ex- pressive family of distributions, which we can use for density estimation: mixture models. mixture model Mixture models can be used to describe a distribution p(x) by a convex combination of K simple (base) distributions"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "11.2 Parameter Learning via Maximum Likelihood \u2014 part 1",
+     "order": 2,
+     "page_start": 356,
+     "page_end": 366,
+     "word_count": 1822,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "11.2 Parameter Learning via Maximum Likelihood \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "350 Density Estimation with Gaussian Mixture Models"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 11.2 Gaussian mixture model. The Gaussian mixture distribution (black) is composed of a convex combination of Gaussian distributions and is more expressive than any individual component. Dashed lines represent the weighted Gaussian components."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "11.2 Parameter Learning via Maximum Likelihood \u2014 part 2",
+     "order": 3,
+     "page_start": 356,
+     "page_end": 366,
+     "word_count": 1750,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "11.2 Parameter Learning via Maximum Likelihood \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "rk := [r1k, . . . , rNk]\u22a4/Nk , (11.25)"
+      },
+      {
+       "type": "paragraph",
+       "text": "which is a normalized probability vector, i.e.,"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "11.3 EM Algorithm",
+     "order": 4,
+     "page_start": 366,
+     "page_end": 369,
+     "word_count": 1262,
+     "est_minutes": 6,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "11.3 EM Algorithm"
+      },
+      {
+       "type": "paragraph",
+       "text": "360 Density Estimation with Gaussian Mixture Models"
+      },
+      {
+       "type": "paragraph",
+       "text": "Example 11.5 (Weight Parameter Updates)"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "11.4 Latent-Variable Perspective \u2014 part 1",
+     "order": 5,
+     "page_start": 369,
+     "page_end": 374,
+     "word_count": 1816,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "11.4 Latent-Variable Perspective \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "11.4 Latent-Variable Perspective 363"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 11.10 GMM fit and responsibilities when EM converges. (a) GMM fit when EM converges; (b) each data point is colored according to the responsibilities of the mixture components."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "11.4 Latent-Variable Perspective \u2014 part 2",
+     "order": 6,
+     "page_start": 369,
+     "page_end": 374,
+     "word_count": 506,
+     "est_minutes": 3,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "11.4 Latent-Variable Perspective \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "\u00a92024 M. P. Deisenroth, A. A. Faisal, C. S. Ong. Published by Cambridge University Press (2020)."
+      },
+      {
+       "type": "paragraph",
+       "text": "368 Density Estimation with Gaussian Mixture Models"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "11.5 Further Reading",
+     "order": 7,
+     "page_start": 374,
+     "page_end": 375,
+     "word_count": 839,
+     "est_minutes": 4,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "11.5 Further Reading"
+      },
+      {
+       "type": "paragraph",
+       "text": "368 Density Estimation with Gaussian Mixture Models"
+      },
+      {
+       "type": "paragraph",
+       "text": "The GMM can be considered a generative model in the sense that it is straightforward to generate new data using ancestral sampling (Bishop, 2006). For given GMM parameters \u03c0k, \u00b5k, \u03a3k, k = 1, . . . , K, we sample an index k from the probability vector [\u03c01, . . . , \u03c0K]\u22a4and then sample a data point x \u223cN \u0000\u00b5k, \u03a3k \u0001 . If we repeat this N times, we obtain a dataset that has been generated by a GMM. Figure 11.1 was generated using this procedure. Throughout this chapter, we assumed that the number of components K is known. In practice, this is often not the case. However, we could use nested cross-validation, as discussed in Section 8.6.1, to find good models. Gaussian mixture models are closely related to the K-means clustering algorithm. K-means also uses the EM algorithm to assign data points to clusters. If we treat the means in the GMM as cluster centers and ignore the covariances (or set them to I), we arrive at K-means. As also nicely described by MacKay (2003), K-means makes a \u201chard\u201d assignment of data points to cluster centers \u00b5k, whereas a GMM makes a \u201csoft\u201d assignment via the responsibilities. We only touched upon the latent-variable perspective of GMMs and the EM algorithm. Note that EM can be used for parameter learning in general latent-variable models, e.g., nonlinear state-space models (Ghahramani and Roweis, 1999; Roweis and Ghahramani, 1999) and for reinforcement learning as discussed by Barber (2012). Therefore, the latent-variable per- spective of a GMM is useful to derive the corresponding EM algorithm in a principled way (Bishop, 2006; Barber, 2012; Murphy, 2012). We only discussed maximum likelihood estimation (via the EM algo- rithm) for finding GMM parameters. The standard criticisms of maximum likelihood also apply here:"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "12 Classification with Support Vector Machines",
+   "order": 12,
+   "page_start": 376,
+   "page_end": 417,
+   "lessons": [
+    {
+     "title": "12.1 Separating Hyperplanes",
+     "order": 1,
+     "page_start": 378,
+     "page_end": 380,
+     "word_count": 1284,
+     "est_minutes": 6,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "12.1 Separating Hyperplanes"
+      },
+      {
+       "type": "paragraph",
+       "text": "372 Classification with Support Vector Machines"
+      },
+      {
+       "type": "paragraph",
+       "text": "In the following, we formalize the idea of finding a linear separator of the two classes. We introduce the idea of the margin and then extend linear separators to allow for examples to fall on the \u201cwrong\u201d side, incur- ring a classification error. We present two equivalent ways of formalizing the SVM: the geometric view (Section 12.2.4) and the loss function view (Section 12.2.5). We derive the dual version of the SVM using Lagrange multipliers (Section 7.2). The dual SVM allows us to observe a third way of formalizing the SVM: in terms of the convex hulls of the examples of each class (Section 12.3.2). We conclude by briefly describing kernels and how to numerically solve the nonlinear kernel-SVM optimization problem."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "12.2 Primal Support Vector Machine \u2014 part 1",
+     "order": 2,
+     "page_start": 380,
+     "page_end": 389,
+     "word_count": 1823,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "12.2 Primal Support Vector Machine \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "374 Classification with Support Vector Machines"
+      },
+      {
+       "type": "paragraph",
+       "text": "Figure 12.3 Possible separating hyperplanes. There are many linear classifiers (green lines) that separate orange crosses from blue discs."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "12.2 Primal Support Vector Machine \u2014 part 2",
+     "order": 3,
+     "page_start": 380,
+     "page_end": 389,
+     "word_count": 1835,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "12.2 Primal Support Vector Machine \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "+ b \u0013 \u2a7er, r > 0 . (12.22)"
+      },
+      {
+       "type": "paragraph",
+       "text": "Equation (12.22) explicitly states that the distance r is positive. Therefore, we can divide the first constraint by r, which yields Note that r > 0 because we assumed linear separability, and hence there is no issue to divide by r."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "12.2 Primal Support Vector Machine \u2014 part 3",
+     "order": 4,
+     "page_start": 380,
+     "page_end": 389,
+     "word_count": 142,
+     "est_minutes": 1,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "12.2 Primal Support Vector Machine \u2014 part 3"
+      },
+      {
+       "type": "paragraph",
+       "text": "12.3.1 Convex Duality via Lagrange Multipliers"
+      },
+      {
+       "type": "paragraph",
+       "text": "Recall the primal soft margin SVM (12.26a). We call the variables w, b, and \u03be corresponding to the primal SVM the primal variables. We use \u03b1n \u2a7e In Chapter 7, we used \u03bb as Lagrange multipliers. In this section, we follow the notation commonly chosen in SVM literature, and use \u03b1 and \u03b3."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "12.3 Dual Support Vector Machine \u2014 part 1",
+     "order": 5,
+     "page_start": 389,
+     "page_end": 394,
+     "word_count": 1811,
+     "est_minutes": 9,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "12.3 Dual Support Vector Machine \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "12.3 Dual Support Vector Machine 383"
+      },
+      {
+       "type": "paragraph",
+       "text": "negative log-likelihood. Furthermore, since the likelihood term for linear regression with Gaussian noise is Gaussian, the negative log-likelihood for each example is a squared error function. The squared error function is the loss function that is minimized when looking for the maximum likelihood solution. \u2662"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "12.3 Dual Support Vector Machine \u2014 part 2",
+     "order": 6,
+     "page_start": 389,
+     "page_end": 394,
+     "word_count": 563,
+     "est_minutes": 3,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "12.3 Dual Support Vector Machine \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "min \u03b1 1 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "n:yn=+1 \u03b1+ n xn \u2212 X"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "12.4 Kernels",
+     "order": 7,
+     "page_start": 394,
+     "page_end": 396,
+     "word_count": 1210,
+     "est_minutes": 6,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "12.4 Kernels"
+      },
+      {
+       "type": "paragraph",
+       "text": "388 Classification with Support Vector Machines"
+      },
+      {
+       "type": "paragraph",
+       "text": "This result can be seen by multiplying out the individual classes"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "12.5 Numerical Solution",
+     "order": 8,
+     "page_start": 396,
+     "page_end": 398,
+     "word_count": 1287,
+     "est_minutes": 6,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "12.5 Numerical Solution"
+      },
+      {
+       "type": "paragraph",
+       "text": "390 Classification with Support Vector Machines"
+      },
+      {
+       "type": "paragraph",
+       "text": "and Williams, 2006). Figure 12.10 illustrates the effect of different kernels on separating hyperplanes on an example dataset. Note that we are still solving for hyperplanes, that is, the hypothesis class of functions are still linear. The non-linear surfaces are due to the kernel function."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "12.6 Further Reading \u2014 part 1",
+     "order": 9,
+     "page_start": 398,
+     "page_end": 417,
+     "word_count": 1921,
+     "est_minutes": 10,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "12.6 Further Reading \u2014 part 1"
+      },
+      {
+       "type": "paragraph",
+       "text": "392 Classification with Support Vector Machines"
+      },
+      {
+       "type": "paragraph",
+       "text": "is an N by N matrix where the elements of the diagonal are from y, and X \u2208RN\u00d7D is the matrix obtained by concatenating all the examples. We can similarly perform a collection of terms for the dual version of the SVM (12.41). To express the dual SVM in standard form, we first have to express the kernel matrix K such that each entry is Kij = k(xi, xj). If we have an explicit feature representation xi then we define Kij = \u27e8xi, xj\u27e9. For convenience of notation we introduce a matrix with zeros everywhere except on the diagonal, where we store the labels, that is, Y = diag(y). The dual SVM can be written as"
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "12.6 Further Reading \u2014 part 2",
+     "order": 10,
+     "page_start": 398,
+     "page_end": 417,
+     "word_count": 1901,
+     "est_minutes": 10,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "12.6 Further Reading \u2014 part 2"
+      },
+      {
+       "type": "paragraph",
+       "text": "Draft (2024-01-15) of \u201cMathematics for Machine Learning\u201d. Feedback: https://mml-book.com."
+      },
+      {
+       "type": "paragraph",
+       "text": "Burges, Christopher. 2010. Dimension Reduction: A Guided Tour. Foundations and Trends in Machine Learning, 2(4), 275\u2013365. Carroll, J Douglas, and Chang, Jih-Jie. 1970. Analysis of Individual Differences in Multidimensional Scaling via an N-Way Generalization of \u201cEckart-Young\u201d Decom- position. Psychometrika, 35(3), 283\u2013319. Casella, George, and Berger, Roger L. 2002. Statistical Inference. Duxbury. C\u00b8inlar, Erhan. 2011. Probability and Stochastics. Springer. Chang, Chih-Chung, and Lin, Chih-Jen. 2011. LIBSVM: A Library for Support Vector Machines. ACM Transactions on Intelligent Systems and Technology, 2, 27:1\u201327:27. Cheeseman, Peter. 1985. In Defense of Probability. In: Proceedings of the International Joint Conference on Artificial Intelligence. Chollet, Francois, and Allaire, J. J. 2018. Deep Learning with R. Manning Publications. Codd, Edgar F. 1990. The Relational Model for Database Management. Addison-Wesley Longman Publishing. Cunningham, John P., and Ghahramani, Zoubin. 2015. Linear Dimensionality Reduc- tion: Survey, Insights, and Generalizations. Journal of Machine Learning Research, 16, 2859\u20132900. Datta, Biswa N. 2010. Numerical Linear Algebra and Applications. SIAM. Davidson, Anthony C., and Hinkley, David V. 1997. Bootstrap Methods and Their Appli- cation. Cambridge University Press. Dean, Jeffrey, Corrado, Greg S., Monga, Rajat, and Chen, et al. 2012. Large Scale Distributed Deep Networks. In: Advances in Neural Information Processing Systems. Deisenroth, Marc P., and Mohamed, Shakir. 2012. Expectation Propagation in Gaus- sian Process Dynamical Systems. Pages 2618\u20132626 of: Advances in Neural Informa- tion Processing Systems. Deisenroth, Marc P., and Ohlsson, Henrik. 2011. A General Perspective on Gaussian Filtering and Smoothing: Explaining Current and Deriving New Algorithms. In: Proceedings of the American Control Conference. Deisenroth, Marc P., Fox, Dieter, and Rasmussen, Carl E. 2015. Gaussian Processes for Data-Efficient Learning in Robotics and Control. IEEE Transactions on Pattern Analysis and Machine Intelligence, 37(2), 408\u2013423. Dempster, Arthur P., Laird, Nan M., and Rubin, Donald B. 1977. Maximum Likelihood from Incomplete Data via the EM Algorithm. Journal of the Royal Statistical Society, 39(1), 1\u201338. Deng, Li, Seltzer, Michael L., Yu, Dong, Acero, Alex, Mohamed, Abdel-rahman, and Hinton, Geoffrey E. 2010. Binary Coding of Speech Spectrograms Using a Deep Auto-Encoder. In: Proceedings of Interspeech. Devroye, Luc. 1986. Non-Uniform Random Variate Generation. Springer. Donoho, David L., and Grimes, Carrie. 2003. Hessian Eigenmaps: Locally Linear Embedding Techniques for High-Dimensional Data. Proceedings of the National Academy of Sciences, 100(10), 5591\u20135596. Dost\u00b4al, Zden\u02d8ek. 2009. Optimal Quadratic Programming Algorithms: With Applications to Variational Inequalities. Springer. Douven, Igor. 2017. Abduction. In: The Stanford Encyclopedia of Philosophy. Meta- physics Research Lab, Stanford University. Downey, Allen B. 2014. Think Stats: Exploratory Data Analysis. 2nd edn. O\u2019Reilly Media. Dreyfus, Stuart. 1962. The Numerical Solution of Variational Problems. Journal of Mathematical Analysis and Applications, 5(1), 30\u201345. Drumm, Volker, and Weil, Wolfgang. 2001. Lineare Algebra und Analytische Geometrie. Lecture Notes, Universit\u00a8at Karlsruhe (TH). Dudley, Richard M. 2002. Real Analysis and Probability. Cambridge University Press."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "12.6 Further Reading \u2014 part 3",
+     "order": 11,
+     "page_start": 398,
+     "page_end": 417,
+     "word_count": 1927,
+     "est_minutes": 10,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "12.6 Further Reading \u2014 part 3"
+      },
+      {
+       "type": "paragraph",
+       "text": "Draft (2024-01-15) of \u201cMathematics for Machine Learning\u201d. Feedback: https://mml-book.com."
+      },
+      {
+       "type": "paragraph",
+       "text": "Manton, Jonathan H., and Amblard, Pierre-Olivier. 2015. A Primer on Reproducing Kernel Hilbert Spaces. Foundations and Trends in Signal Processing, 8(1\u20132), 1\u2013126. Markovsky, Ivan. 2011. Low Rank Approximation: Algorithms, Implementation, Appli- cations. Springer. Maybeck, Peter S. 1979. Stochastic Models, Estimation, and Control. Academic Press. McCullagh, Peter, and Nelder, John A. 1989. Generalized Linear Models. CRC Press. McEliece, Robert J., MacKay, David J. C., and Cheng, Jung-Fu. 1998. Turbo Decoding as an Instance of Pearl\u2019s \u201cBelief Propagation\u201d Algorithm. IEEE Journal on Selected Areas in Communications, 16(2), 140\u2013152. Mika, Sebastian, R\u00a8atsch, Gunnar, Weston, Jason, Sch\u00a8olkopf, Bernhard, and M\u00a8uller, Klaus-Robert. 1999. Fisher Discriminant Analysis with Kernels. Pages 41\u201348 of: Proceedings of the Workshop on Neural Networks for Signal Processing. Minka, Thomas P. 2001a. A Family of Algorithms for Approximate Bayesian Inference. Ph.D. thesis, Massachusetts Institute of Technology. Minka, Tom. 2001b. Automatic Choice of Dimensionality of PCA. In: Advances in Neural Information Processing Systems. Mitchell, Tom. 1997. Machine Learning. McGraw-Hill. Mnih, Volodymyr, Kavukcuoglu, Koray, and Silver, David, et al. 2015. Human-Level Control through Deep Reinforcement Learning. Nature, 518, 529\u2013533. Moonen, Marc, and De Moor, Bart. 1995. SVD and Signal Processing, III: Algorithms, Architectures and Applications. Elsevier. Moustaki, Irini, Knott, Martin, and Bartholomew, David J. 2015. Latent-Variable Mod- eling. American Cancer Society. Pages 1\u201310. M\u00a8uller, Andreas C., and Guido, Sarah. 2016. Introduction to Machine Learning with Python: A Guide for Data Scientists. O\u2019Reilly Publishing. Murphy, Kevin P. 2012. Machine Learning: A Probabilistic Perspective. MIT Press. Neal, Radford M. 1996. Bayesian Learning for Neural Networks. Ph.D. thesis, Depart- ment of Computer Science, University of Toronto. Neal, Radford M., and Hinton, Geoffrey E. 1999. A View of the EM Algorithm that Justifies Incremental, Sparse, and Other Variants. Pages 355\u2013368 of: Learning in Graphical Models. MIT Press. Nelsen, Roger. 2006. An Introduction to Copulas. Springer. Nesterov, Yuri. 2018. Lectures on Convex Optimization. Springer. Neumaier, Arnold. 1998. Solving Ill-Conditioned and Singular Linear Systems: A Tu- torial on Regularization. SIAM Review, 40, 636\u2013666. Nocedal, Jorge, and Wright, Stephen J. 2006. Numerical Optimization. Springer. Nowozin, Sebastian, Gehler, Peter V., Jancsary, Jeremy, and Lampert, Christoph H. (eds). 2014. Advanced Structured Prediction. MIT Press. O\u2019Hagan, Anthony. 1991. Bayes-Hermite Quadrature. Journal of Statistical Planning and Inference, 29, 245\u2013260. Ong, Cheng Soon, Mary, Xavier, Canu, St\u00b4ephane, and Smola, Alexander J. 2004. Learn- ing with Non-Positive Kernels. In: Proceedings of the International Conference on Machine Learning. Ormoneit, Dirk, Sidenbladh, Hedvig, Black, Michael J., and Hastie, Trevor. 2001. Learning and Tracking Cyclic Human Motion. In: Advances in Neural Information Processing Systems. Page, Lawrence, Brin, Sergey, Motwani, Rajeev, and Winograd, Terry. 1999. The PageRank Citation Ranking: Bringing Order to the Web. Tech. rept. Stanford Info- Lab. Paquet, Ulrich. 2008. Bayesian Inference for Latent Variable Models. Ph.D. thesis, Uni- versity of Cambridge. Parzen, Emanuel. 1962. On Estimation of a Probability Density Function and Mode. Annals of Mathematical Statistics, 33(3), 1065\u20131076."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    },
+    {
+     "title": "12.6 Further Reading \u2014 part 4",
+     "order": 12,
+     "page_start": 398,
+     "page_end": 417,
+     "word_count": 1697,
+     "est_minutes": 8,
+     "n_figures": 0,
+     "raw_blocks": [
+      {
+       "type": "heading",
+       "text": "12.6 Further Reading \u2014 part 4"
+      },
+      {
+       "type": "paragraph",
+       "text": "Draft (2024-01-15) of \u201cMathematics for Machine Learning\u201d. Feedback: https://mml-book.com."
+      },
+      {
+       "type": "paragraph",
+       "text": "Wahba, Grace. 1990. Spline Models for Observational Data. Society for Industrial and Applied Mathematics. Walpole, Ronald E., Myers, Raymond H., Myers, Sharon L., and Ye, Keying. 2011. Probability and Statistics for Engineers and Scientists. Prentice Hall. Wasserman, Larry. 2004. All of Statistics. Springer. Wasserman, Larry. 2007. All of Nonparametric Statistics. Springer. Whittle, Peter. 2000. Probability via Expectation. Springer. Wickham, Hadley. 2014. Tidy Data. Journal of Statistical Software, 59, 1\u201323. Williams, Christopher K. I. 1997. Computing with Infinite Networks. In: Advances in Neural Information Processing Systems. Yu, Yaoliang, Cheng, Hao, Schuurmans, Dale, and Szepesv\u00b4ari, Csaba. 2013. Charac- terizing the Representer Theorem. In: Proceedings of the International Conference on Machine Learning. Zadrozny, Bianca, and Elkan, Charles. 2001. Obtaining Calibrated Probability Esti- mates from Decision Trees and Naive Bayesian Classifiers. In: Proceedings of the International Conference on Machine Learning. Zhang, Haizhang, Xu, Yuesheng, and Zhang, Jun. 2009. Reproducing Kernel Banach Spaces for Machine Learning. Journal of Machine Learning Research, 10, 2741\u20132775. Zia, Royce K. P., Redish, Edward F., and McKay, Susan R. 2009. Making Sense of the Legendre Transform. American Journal of Physics, 77(614), 614\u2013622."
+      },
+      {
+       "type": "\u2026",
+       "note": "truncated for sample"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

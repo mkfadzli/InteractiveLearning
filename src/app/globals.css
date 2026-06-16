@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============ DESIGN TOKENS — single source of truth ============
+   Mirror of src/lib/tokens.ts (keep in sync; tokens.ts is exported
+   for the future React Native / Expo app). */
+:root {
+  /* Brand */
+  --teal: #0fb1a8;        /* brand fill: rings, progress, gradients — NOT small text on white */
+  --teal-deep: #0b7a74;   /* accessible primary: buttons, links, text (>=4.5:1 on light) */
+  --teal-soft: #e0f5f3;
+  --coral: #ff6b61;
+  --coral-deep: #d9453b;
+  --coral-soft: #ffe9e7;
+  --navy: #0b2545;
+  --slate: #6b7a90;
+
+  /* Semantic — light */
+  --bg: #f6f8fa;
+  --surface: #ffffff;
+  --surface-2: #eef2f6;
+  --text: #0b2545;
+  --text-2: #5b6b82;
+  --border: #e2e8f0;
+  --primary: var(--teal-deep);
+  --on-primary: #ffffff;
+  --accent: var(--coral);
+  --success: #0b7a74;
+  --error: #c9302a;
+  --glass: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(11, 37, 69, 0.08);
+
+  --radius-lg: 20px;
+  --radius-md: 14px;
+  --radius-sm: 10px;
+  --font-inter: "Inter";
+  --font-poppins: "Poppins";
+  --dur: 200ms;
+  --ease: cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+
+[data-theme="dark"] {
+  --bg: #071020;
+  --surface: #0e1b30;
+  --surface-2: #132440;
+  --text: #eaf1f8;
+  --text-2: #9fb0c5;
+  --border: #1e3252;
+  --teal: #0da99c;
+  --teal-soft: #0e2e3a;
+  --coral: #ff7a6e;
+  --coral-deep: #ff9189;
+  --coral-soft: #3a1e22;
+  --primary: #34c8bc;
+  --on-primary: #06251f;
+  --success: #34c8bc;
+  --error: #ff8a82;
+  --glass: rgba(14, 27, 48, 0.66);
+  --glass-border: rgba(234, 241, 248, 0.08);
+}
+
+@layer base {
+  html {
+    touch-action: manipulation;
+  }
+  body {
+    @apply bg-bg text-text font-body antialiased;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+    min-height: 100dvh;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display;
+  }
+  :focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(15, 177, 168, 0.35);
+    border-radius: 8px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+}
+
+@layer components {
+  .glass {
+    backdrop-filter: blur(12px);
+    background: var(--glass);
+    border-color: var(--glass-border);
+  }
+}

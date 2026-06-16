@@ -1,0 +1,153 @@
+{
+  "source": {
+    "file": "mml-book.pdf",
+    "title": "Mathematics for Machine Learning (public textbook — demo content)",
+    "pages": 417,
+    "structure_from": "embedded_toc"
+  },
+  "summary": { "modules": 1, "lessons": 2, "words": 1180, "est_hours": 0.2 },
+  "confidence": { "score": 0.9, "flags": [] },
+  "modules": [
+    {
+      "title": "Introduction and Motivation",
+      "order": 1,
+      "page_start": 17,
+      "page_end": 22,
+      "lessons": [
+        {
+          "title": "1.1 Finding Words for Intuitions",
+          "order": 1,
+          "page_start": 17,
+          "page_end": 19,
+          "est_minutes": 4,
+          "story": {
+            "title": "Why “algorithm” means two different things",
+            "est_minutes": 4,
+            "pages": [
+              {
+                "blocks": [
+                  { "type": "heading", "text": "Slippery words, precise math" },
+                  { "type": "paragraph", "text": "A challenge we face constantly in machine learning is that its words are slippery: the same term can point to different mathematical ideas depending on who is speaking. Before any equations, it pays to pin the vocabulary down." },
+                  { "type": "paragraph", "text": "Take the word “algorithm”. It is used in at least two distinct senses. In one sense, it means the system that makes predictions from input data — what we can more precisely call a predictor, or a model. In the other sense, it means the procedure that trains that system: the recipe that adapts a model's internal parameters using data." },
+                  { "type": "callout", "title": "Why this distinction matters", "text": "When someone says “the algorithm learned”, they are mixing both senses in one sentence: a training algorithm (sense two) adjusted a predictor (sense one). Keeping the two apart makes every later concept clearer." },
+                  { "type": "key_idea", "text": "“Algorithm” can mean the predictor itself, or the training procedure that produces it — two different objects." }
+                ]
+              },
+              {
+                "blocks": [
+                  { "type": "heading", "text": "The three ingredients: data, models, learning" },
+                  { "type": "paragraph", "text": "Machine learning systems are built from three core components. First, data — which we represent as vectors so that mathematics can operate on it. Second, a model — chosen through either a probabilistic view or an optimization view of the problem. Third, learning — using numerical optimization methods to adapt the model's parameters based on the available data." },
+                  { "type": "paragraph", "text": "A model is said to learn from data if its performance on a given task improves after the data is taken into account. The goal of the whole exercise is to find good models that generalize well to data we have not yet seen." },
+                  { "type": "key_idea", "text": "Data (as vectors) + a model (probabilistic or optimization view) + learning (numerical optimization) — every ML system reduces to these three." }
+                ]
+              },
+              {
+                "blocks": [
+                  { "type": "heading", "text": "Memorizing is not learning" },
+                  { "type": "paragraph", "text": "Here is the trap: in practice we care about how the model performs on unseen data. Performing well on the training data — data the model has already seen — may only mean we found a good way to memorize it." },
+                  { "type": "paragraph", "text": "Memorization can look like success while telling us nothing about the future. That is why model quality is judged on data that was deliberately held out of training: it is the only honest test of whether the model captured something general rather than something specific to its training set." },
+                  { "type": "callout", "title": "A familiar analogy", "text": "A student who memorizes past exam papers may ace a repeat of those exact papers — and still fail a new exam on the same subject. Models behave the same way." },
+                  { "type": "key_idea", "text": "Good training performance can be mere memorization; only performance on unseen data demonstrates real learning." }
+                ]
+              }
+            ],
+            "quiz": {
+              "questions": [
+                {
+                  "prompt": "The word “algorithm” is used in two senses in machine learning. What are they?",
+                  "options": [
+                    "A programming language and a software library",
+                    "The predictor that makes predictions, and the training procedure that adapts its parameters",
+                    "Supervised learning and unsupervised learning",
+                    "The dataset and the loss function"
+                  ],
+                  "correctIndex": 1,
+                  "explanation": "One sense is the system that makes predictions (the predictor/model); the other is the training procedure that adapts the model's parameters using data."
+                },
+                {
+                  "prompt": "What are the three core components of a machine learning system described in this lesson?",
+                  "options": [
+                    "Hardware, software, and networks",
+                    "Inputs, outputs, and labels",
+                    "Data, models, and learning",
+                    "Training, validation, and testing"
+                  ],
+                  "correctIndex": 2,
+                  "explanation": "The lesson's second page introduces exactly this triad: data represented as vectors, a model chosen via a probabilistic or optimization view, and learning via numerical optimization."
+                },
+                {
+                  "prompt": "Why is strong performance on training data not enough evidence that a model has learned?",
+                  "options": [
+                    "Training data is always mislabeled",
+                    "It may only mean the model memorized the data it has already seen",
+                    "Training performance cannot be measured",
+                    "Models are forbidden from using training data twice"
+                  ],
+                  "correctIndex": 1,
+                  "explanation": "Performing well on already-seen data may just mean good memorization; what matters in practice is performance on unseen data."
+                }
+              ]
+            }
+          },
+          "story_figures": []
+        },
+        {
+          "title": "1.2 Two Ways to Read This Book",
+          "order": 2,
+          "page_start": 19,
+          "page_end": 22,
+          "est_minutes": 3,
+          "story": {
+            "title": "Bottom-up or top-down: two reading strategies",
+            "est_minutes": 3,
+            "pages": [
+              {
+                "blocks": [
+                  { "type": "heading", "text": "Two strategies for learning the math" },
+                  { "type": "paragraph", "text": "There are two ways to approach the mathematics behind machine learning. The bottom-up strategy builds concepts from foundational to more advanced — the preferred approach in technical fields like mathematics, because the reader can always rely on what they previously learned." },
+                  { "type": "paragraph", "text": "The alternative is to start from the application you care about and drill down into the foundations only as needed. Neither is universally right; they suit different readers and different goals." },
+                  { "type": "key_idea", "text": "Bottom-up builds foundations first; top-down starts from the application and digs into theory as needed." }
+                ]
+              },
+              {
+                "blocks": [
+                  { "type": "heading", "text": "A book built for both paths" },
+                  { "type": "paragraph", "text": "The book is deliberately written in a modular way, separating the foundational mathematical concepts from their applications, so it can be read in either direction. It is split into two parts: Part I lays the mathematical foundations, while Part II applies them to core machine learning problems." },
+                  { "type": "callout", "title": "Takeaway for course design", "text": "Modular structure is what makes multiple learning paths possible — the same principle this learning platform applies to every PDF it converts." },
+                  { "type": "key_idea", "text": "Modular separation of foundations and applications lets the same material serve both reading strategies." }
+                ]
+              }
+            ],
+            "quiz": {
+              "questions": [
+                {
+                  "prompt": "What advantage does the bottom-up reading strategy offer?",
+                  "options": [
+                    "It skips all foundational material",
+                    "The reader can always rely on concepts they previously learned",
+                    "It requires no mathematics",
+                    "It is the only way to read Part II"
+                  ],
+                  "correctIndex": 1,
+                  "explanation": "Bottom-up builds from foundational to advanced, so at every point the reader can lean on what came before."
+                },
+                {
+                  "prompt": "How is the book structured to support both reading strategies?",
+                  "options": [
+                    "Every chapter repeats all prior chapters",
+                    "It is modular: Part I covers mathematical foundations, Part II covers applications",
+                    "It contains no exercises",
+                    "Each chapter is written twice in different styles"
+                  ],
+                  "correctIndex": 1,
+                  "explanation": "The modular split — foundations in Part I, machine learning applications in Part II — is what allows reading in either direction."
+                }
+              ]
+            }
+          },
+          "story_figures": []
+        }
+      ]
+    }
+  ]
+}
